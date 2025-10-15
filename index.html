@@ -1,0 +1,2384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preal Jesse Gepulgane - Electronics & AI Automation Specialist</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            box-sizing: border-box;
+        }
+
+        /* Dynamic Color System */
+        :root {
+            --primary-50: #f8fafc;
+            --primary-100: #f1f5f9;
+            --primary-200: #e2e8f0;
+            --primary-500: #475569;
+            --primary-600: #334155;
+            --primary-700: #1e293b;
+            --primary-800: #0f172a;
+        }
+
+        .gradient-bg {
+            background: linear-gradient(135deg, var(--primary-700) 0%, var(--primary-800) 100%);
+        }
+
+        /* Theme Classes */
+        .text-primary-50 {
+            color: var(--primary-50);
+        }
+
+        .text-primary-100 {
+            color: var(--primary-100);
+        }
+
+        .text-primary-200 {
+            color: var(--primary-200);
+        }
+
+        .text-primary-500 {
+            color: var(--primary-500);
+        }
+
+        .text-primary-600 {
+            color: var(--primary-600);
+        }
+
+        .text-primary-700 {
+            color: var(--primary-700);
+        }
+
+        .text-primary-800 {
+            color: var(--primary-800);
+        }
+
+        .bg-primary-50 {
+            background-color: var(--primary-50);
+        }
+
+        .bg-primary-100 {
+            background-color: var(--primary-100);
+        }
+
+        .bg-primary-200 {
+            background-color: var(--primary-200);
+        }
+
+        .bg-primary-500 {
+            background-color: var(--primary-500);
+        }
+
+        .bg-primary-600 {
+            background-color: var(--primary-600);
+        }
+
+        .bg-primary-700 {
+            background-color: var(--primary-700);
+        }
+
+        .bg-primary-800 {
+            background-color: var(--primary-800);
+        }
+
+        .border-primary-500 {
+            border-color: var(--primary-500);
+        }
+
+        .border-primary-600 {
+            border-color: var(--primary-600);
+        }
+
+        .hover\:bg-primary-50:hover {
+            background-color: var(--primary-50);
+        }
+
+        .hover\:bg-primary-700:hover {
+            background-color: var(--primary-700);
+        }
+
+        .hover\:text-primary-600:hover {
+            color: var(--primary-600);
+        }
+
+        .hover\:text-primary-700:hover {
+            color: var(--primary-700);
+        }
+
+        /* Theme Variations - Professional Colors */
+        .theme-corporate {
+            --primary-50: #f8fafc;
+            --primary-100: #f1f5f9;
+            --primary-200: #e2e8f0;
+            --primary-500: #475569;
+            --primary-600: #334155;
+            --primary-700: #1e293b;
+            --primary-800: #0f172a;
+        }
+
+        .theme-navy {
+            --primary-50: #f0f9ff;
+            --primary-100: #e0f2fe;
+            --primary-200: #bae6fd;
+            --primary-500: #0369a1;
+            --primary-600: #0284c7;
+            --primary-700: #0c4a6e;
+            --primary-800: #082f49;
+        }
+
+        .theme-forest {
+            --primary-50: #f0fdf4;
+            --primary-100: #dcfce7;
+            --primary-200: #bbf7d0;
+            --primary-500: #16a34a;
+            --primary-600: #15803d;
+            --primary-700: #166534;
+            --primary-800: #14532d;
+        }
+
+        .theme-executive {
+            --primary-50: #fafaf9;
+            --primary-100: #f5f5f4;
+            --primary-200: #e7e5e4;
+            --primary-500: #78716c;
+            --primary-600: #57534e;
+            --primary-700: #44403c;
+            --primary-800: #292524;
+        }
+
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+
+        .card-hover:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px -3px rgba(0, 0, 0, 0.1);
+        }
+
+        .skill-bar {
+            transition: width 1.5s ease-in-out;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .fade-in-up {
+            animation: fadeInUp 0.6s ease-out;
+        }
+
+        /* Professional Typography */
+        .section-title {
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+            font-weight: 700;
+            letter-spacing: -0.025em;
+        }
+
+        .body-text {
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+            line-height: 1.7;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50 font-sans theme-corporate">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm fixed w-full top-0 z-50 border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center">
+                    <div class="w-10 h-10 bg-primary-700 rounded-lg flex items-center justify-center mr-3">
+                        <span class="text-white font-bold text-lg">PJG</span>
+                    </div>
+                    <div class="text-xl font-bold text-gray-900">Preal Jesse Gepulgane</div>
+                </div>
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="#home"
+                        class="text-gray-700 hover:text-primary-700 transition duration-300 font-medium">Home</a>
+                    <a href="#about"
+                        class="text-gray-700 hover:text-primary-700 transition duration-300 font-medium">About</a>
+                    <a href="#services"
+                        class="text-gray-700 hover:text-primary-700 transition duration-300 font-medium">Services</a>
+                    <a href="#expertise"
+                        class="text-gray-700 hover:text-primary-700 transition duration-300 font-medium">Expertise</a>
+                    <a href="#automation-demo"
+                        class="text-gray-700 hover:text-primary-700 transition duration-300 font-medium">Live Demo</a>
+                    <a href="#projects"
+                        class="text-gray-700 hover:text-primary-700 transition duration-300 font-medium">Portfolio</a>
+                    <a href="#contact"
+                        class="bg-primary-700 text-white px-6 py-2 rounded-lg hover:bg-primary-800 transition duration-300 font-medium">Contact</a>
+
+                    <!-- Theme Selector -->
+                    <div class="relative">
+                        <button id="theme-selector"
+                            class="p-2 text-gray-500 hover:text-primary-700 transition duration-300">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+                            </svg>
+                        </button>
+                        <div id="theme-dropdown"
+                            class="hidden absolute right-0 mt-2 w-48 bg-white rounded-lg shadow-lg border border-gray-200 py-2">
+                            <button
+                                class="theme-option w-full px-4 py-2 text-left hover:bg-gray-50 flex items-center space-x-3"
+                                data-theme="corporate">
+                                <div class="w-3 h-3 bg-slate-600 rounded-full"></div>
+                                <span class="text-sm">Corporate</span>
+                            </button>
+                            <button
+                                class="theme-option w-full px-4 py-2 text-left hover:bg-gray-50 flex items-center space-x-3"
+                                data-theme="navy">
+                                <div class="w-3 h-3 bg-blue-600 rounded-full"></div>
+                                <span class="text-sm">Navy</span>
+                            </button>
+                            <button
+                                class="theme-option w-full px-4 py-2 text-left hover:bg-gray-50 flex items-center space-x-3"
+                                data-theme="forest">
+                                <div class="w-3 h-3 bg-green-600 rounded-full"></div>
+                                <span class="text-sm">Forest</span>
+                            </button>
+                            <button
+                                class="theme-option w-full px-4 py-2 text-left hover:bg-gray-50 flex items-center space-x-3"
+                                data-theme="executive">
+                                <div class="w-3 h-3 bg-stone-600 rounded-full"></div>
+                                <span class="text-sm">Executive</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <button id="mobile-menu-btn" class="md:hidden text-gray-700">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="gradient-bg text-white min-h-screen flex items-center pt-16">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="fade-in-up">
+                    <div class="inline-flex items-center bg-white bg-opacity-10 rounded-full px-4 py-2 mb-6">
+                        <div class="w-2 h-2 bg-green-400 rounded-full mr-2"></div>
+                        <span class="text-sm font-medium">Available for Projects</span>
+                    </div>
+                    <h1 class="text-5xl lg:text-6xl font-bold mb-6 section-title">Electronics & AI Automation
+                        Specialist</h1>
+                    <p class="text-xl mb-8 text-primary-200 body-text max-w-2xl">Delivering enterprise-grade solutions
+                        that bridge hardware engineering with intelligent automation systems. Specialized in n8n
+                        workflows, full-stack development, and electronic system design.</p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="#services"
+                            class="bg-white text-primary-700 px-8 py-4 rounded-lg font-semibold hover:bg-primary-50 transition duration-300 text-center">View
+                            Services</a>
+                        <a href="https://calendly.com/your-username" target="_blank" rel="noopener noreferrer"
+                            class="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-primary-700 transition duration-300 text-center">Schedule
+                            Consultation</a>
+                    </div>
+                </div>
+                <div class="hidden lg:block">
+                    <div class="relative">
+                        <div class="w-96 h-96 rounded-2xl overflow-hidden shadow-2xl">
+                            <img src="./image/495017398_9621693837880539_5409204655494305851_n.jpg"
+                                alt="Preal Jesse Gepulgane" class="w-full h-full object-cover">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div>
+                    <div
+                        class="inline-block bg-primary-100 text-primary-700 px-4 py-2 rounded-full text-sm font-medium mb-6">
+                        Professional Background</div>
+                    <h2 class="text-4xl font-bold mb-8 text-gray-900 section-title">5+ Years in Engineering & Automation
+                    </h2>
+                    <p class="text-lg text-gray-600 mb-6 body-text">
+                        Field Service Engineer working with clinical laboratory equipment. I handle maintenance,
+                        calibration, and troubleshooting. Also build custom Arduino-based solutions for automation and
+                        diagnostics.
+                    </p>
+                    <p class="text-lg text-gray-600 mb-8 body-text">
+                        Currently learning n8n automation, web development with Laravel and Livewire, and working with
+                        AI tools. Interested in connecting hardware, software, and automation to solve practical
+                        problems.
+                    </p>
+
+                    <!-- Stats -->
+                    <div class="grid grid-cols-2 gap-8">
+                        <div>
+                            <div class="text-3xl font-bold text-primary-700 mb-2">10+</div>
+                            <div class="text-gray-600">Projects Completed</div>
+                        </div>
+                        <div>
+                            <div class="text-3xl font-bold text-primary-700 mb-2">5+</div>
+                            <div class="text-gray-600">Enterprise Clients</div>
+                        </div>
+                        <div>
+                            <div class="text-3xl font-bold text-primary-700 mb-2">5+</div>
+                            <div class="text-gray-600">Years Experience</div>
+                        </div>
+                        <div>
+                            <div class="text-3xl font-bold text-primary-700 mb-2">99%</div>
+                            <div class="text-gray-600">Client Satisfaction</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-gray-50 p-8 rounded-2xl">
+                    <h3 class="text-2xl font-bold mb-6 text-gray-900">Core Competencies</h3>
+                    <div class="space-y-6">
+                        <div>
+                            <div class="flex justify-between items-center mb-2">
+                                <span class="font-medium text-gray-900">Electronics Engineering</span>
+                                <span class="text-sm text-gray-600">Expert</span>
+                            </div>
+                            <div class="bg-gray-200 rounded-full h-2">
+                                <div class="bg-primary-600 h-2 rounded-full skill-bar" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between items-center mb-2">
+                                <span class="font-medium text-gray-900">n8n Automation</span>
+                                <span class="text-sm text-gray-600">Expert</span>
+                            </div>
+                            <div class="bg-gray-200 rounded-full h-2">
+                                <div class="bg-primary-600 h-2 rounded-full skill-bar" style="width: 98%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between items-center mb-2">
+                                <span class="font-medium text-gray-900">Full-Stack Development</span>
+                                <span class="text-sm text-gray-600">Advanced</span>
+                            </div>
+                            <div class="bg-gray-200 rounded-full h-2">
+                                <div class="bg-primary-600 h-2 rounded-full skill-bar" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between items-center mb-2">
+                                <span class="font-medium text-gray-900">System Integration</span>
+                                <span class="text-sm text-gray-600">Expert</span>
+                            </div>
+                            <div class="bg-gray-200 rounded-full h-2">
+                                <div class="bg-primary-600 h-2 rounded-full skill-bar" style="width: 93%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-24 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <div
+                    class="inline-block bg-primary-100 text-primary-700 px-4 py-2 rounded-full text-sm font-medium mb-6">
+                    Services</div>
+                <h2 class="text-4xl font-bold mb-6 text-gray-900 section-title">What I Do</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto body-text">Hardware and software solutions for
+                    automation, web development, and system integration.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 card-hover">
+                    <div class="w-16 h-16 bg-primary-100 rounded-xl flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-primary-600" fill="currentColor" viewBox="0 0 20 20">
+                            <path
+                                d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6zM14 9a1 1 0 00-1 1v6a1 1 0 001 1h2a1 1 0 001-1v-6a1 1 0 00-1-1h-2z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 text-gray-900">Electronics Design & Development</h3>
+                    <p class="text-gray-600 mb-6 body-text">Custom electronic systems from schematic to PCB, including
+                        embedded firmware and testing.</p>
+                    <ul class="space-y-2 text-sm text-gray-600">
+                        <li class="flex items-center"><span
+                                class="w-1.5 h-1.5 bg-primary-600 rounded-full mr-3"></span>Circuit Design & Analysis
+                        </li>
+                        <li class="flex items-center"><span
+                                class="w-1.5 h-1.5 bg-primary-600 rounded-full mr-3"></span>Embedded Systems Programming
+                        </li>
+                        <li class="flex items-center"><span
+                                class="w-1.5 h-1.5 bg-primary-600 rounded-full mr-3"></span>Prototype Development</li>
+                    </ul>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 card-hover">
+                    <div class="w-16 h-16 bg-primary-100 rounded-xl flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-primary-600" fill="currentColor" viewBox="0 0 20 20">
+                            <path
+                                d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5zM5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 text-gray-900">n8n Workflow Automation</h3>
+                    <p class="text-gray-600 mb-6 body-text">Business process automation using n8n to connect systems and
+                        streamline workflows.</p>
+                    <ul class="space-y-2 text-sm text-gray-600">
+                        <li class="flex items-center"><span
+                                class="w-1.5 h-1.5 bg-primary-600 rounded-full mr-3"></span>Custom Workflow Development
+                        </li>
+                        <li class="flex items-center"><span
+                                class="w-1.5 h-1.5 bg-primary-600 rounded-full mr-3"></span>API Integration & Management
+                        </li>
+                        <li class="flex items-center"><span
+                                class="w-1.5 h-1.5 bg-primary-600 rounded-full mr-3"></span>Process Optimization</li>
+                        <li class="flex items-center"><span
+                                class="w-1.5 h-1.5 bg-primary-600 rounded-full mr-3"></span>System Monitoring & Alerts
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 card-hover">
+                    <div class="w-16 h-16 bg-primary-100 rounded-xl flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-primary-600" fill="currentColor" viewBox="0 0 20 20">
+                            <path
+                                d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6zM14 9a1 1 0 00-1 1v6a1 1 0 001 1h2a1 1 0 001-1v-6a1 1 0 00-1-1h-2z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 text-gray-900">Full-Stack Web Development</h3>
+                    <p class="text-gray-600 mb-6 body-text">Web applications with responsive design and real-time data
+                        visualization.</p>
+                    <ul class="space-y-2 text-sm text-gray-600">
+                        <li class="flex items-center"><span
+                                class="w-1.5 h-1.5 bg-primary-600 rounded-full mr-3"></span>Laravel + livewire
+                            Applications
+                        </li>
+                        <li class="flex items-center"><span
+                                class="w-1.5 h-1.5 bg-primary-600 rounded-full mr-3"></span>Database Design &
+                            Optimization</li>
+                        <li class="flex items-center"><span
+                                class="w-1.5 h-1.5 bg-primary-600 rounded-full mr-3"></span>Real-time Data Dashboards
+                        </li>
+                        <li class="flex items-center"><span
+                                class="w-1.5 h-1.5 bg-primary-600 rounded-full mr-3"></span>Cloud Deployment & Scaling
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 card-hover">
+                    <div class="w-16 h-16 bg-primary-100 rounded-xl flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-primary-600" fill="currentColor" viewBox="0 0 20 20">
+                            <path
+                                d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 text-gray-900">Arduino Developer</h3>
+                    <p class="text-gray-600 mb-6 body-text">Connecting sensors and devices to
+                        platforms for data collection and analysis.</p>
+                    <ul class="space-y-2 text-sm text-gray-600">
+                        <li class="flex items-center"><span
+                                class="w-1.5 h-1.5 bg-primary-600 rounded-full mr-3"></span>Sensor Design</li>
+                        <li class="flex items-center"><span
+                                class="w-1.5 h-1.5 bg-primary-600 rounded-full mr-3"></span>Arduino System
+                        </li>
+                        <li class="flex items-center"><span
+                                class="w-1.5 h-1.5 bg-primary-600 rounded-full mr-3"></span>Integration
+                        </li>
+                        <li class="flex items-center"><span
+                                class="w-1.5 h-1.5 bg-primary-600 rounded-full mr-3"></span>Predictive Analytics</li>
+                    </ul>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 card-hover">
+                    <div class="w-16 h-16 bg-primary-100 rounded-xl flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-primary-600" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 text-gray-900">Robotics Consultant</h3>
+                    <p class="text-gray-600 mb-6 body-text">Testing protocols and automated systems for reliability
+                        and performance.</p>
+                    <ul class="space-y-2 text-sm text-gray-600">
+                        <li class="flex items-center"><span
+                                class="w-1.5 h-1.5 bg-primary-600 rounded-full mr-3"></span>Automated Testing Systems
+                        </li>
+                        <li class="flex items-center"><span
+                                class="w-1.5 h-1.5 bg-primary-600 rounded-full mr-3"></span>Performance Validation</li>
+                        <li class="flex items-center"><span
+                                class="w-1.5 h-1.5 bg-primary-600 rounded-full mr-3"></span>Compliance Verification</li>
+                        <li class="flex items-center"><span
+                                class="w-1.5 h-1.5 bg-primary-600 rounded-full mr-3"></span>Documentation & Reporting
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 card-hover">
+                    <div class="w-16 h-16 bg-primary-100 rounded-xl flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-primary-600" fill="currentColor" viewBox="0 0 20 20">
+                            <path
+                                d="M8.433 7.418c.155-.103.346-.196.567-.267v1.698a2.305 2.305 0 01-.567-.267C8.07 8.34 8 8.114 8 8c0-.114.07-.34.433-.582zM11 12.849v-1.698c.22.071.412.164.567.267.364.243.433.468.433.582 0 .114-.07.34-.433.582a2.305 2.305 0 01-.567.267z" />
+                            <path fill-rule="evenodd"
+                                d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-13a1 1 0 10-2 0v.092a4.535 4.535 0 00-1.676.662C6.602 6.234 6 7.009 6 8c0 .99.602 1.765 1.324 2.246.48.32 1.054.545 1.676.662v1.941c-.391-.127-.68-.317-.843-.504a1 1 0 10-1.51 1.31c.562.649 1.413 1.076 2.353 1.253V15a1 1 0 102 0v-.092a4.535 4.535 0 001.676-.662C13.398 13.766 14 12.991 14 12c0-.99-.602-1.765-1.324-2.246A4.535 4.535 0 0011 9.092V7.151c.391.127.68.317.843.504a1 1 0 101.511-1.31c-.563-.649-1.413-1.076-2.354-1.253V5z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 text-gray-900">Technical Consulting</h3>
+                    <p class="text-gray-600 mb-6 body-text">Technical guidance for product development, system design,
+                        and technology choices.</p>
+                    <ul class="space-y-2 text-sm text-gray-600">
+                        <li class="flex items-center"><span
+                                class="w-1.5 h-1.5 bg-primary-600 rounded-full mr-3"></span>Architecture Planning</li>
+                        <li class="flex items-center"><span
+                                class="w-1.5 h-1.5 bg-primary-600 rounded-full mr-3"></span>Technology Assessment</li>
+                        <li class="flex items-center"><span
+                                class="w-1.5 h-1.5 bg-primary-600 rounded-full mr-3"></span>Project Management</li>
+                        <li class="flex items-center"><span
+                                class="w-1.5 h-1.5 bg-primary-600 rounded-full mr-3"></span>Team Training & Support</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Expertise Section -->
+    <section id="expertise" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <div
+                    class="inline-block bg-primary-100 text-primary-700 px-4 py-2 rounded-full text-sm font-medium mb-6">
+                    Technical Expertise</div>
+                <h2 class="text-4xl font-bold mb-6 text-gray-900 section-title">Technologies & Tools</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto body-text">Proficient in industry-leading technologies
+                    and frameworks for delivering robust, scalable solutions.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Electronics -->
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-primary-100 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-10 h-10 text-primary-600" fill="currentColor" viewBox="0 0 20 20">
+                            <path
+                                d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6zM14 9a1 1 0 00-1 1v6a1 1 0 001 1h2a1 1 0 001-1v-6a1 1 0 00-1-1h-2z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-bold mb-4 text-gray-900">Electronics</h3>
+                    <div class="space-y-2 text-sm text-gray-600">
+                        <div>Robotics</div>
+                        <div>KiCad</div>
+                        <div>Arduino</div>
+                        <div>Oscilloscopes</div>
+                        <div>Logic Analyzers</div>
+                    </div>
+                </div>
+
+                <!-- Automation -->
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-primary-100 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-10 h-10 text-primary-600" fill="currentColor" viewBox="0 0 20 20">
+                            <path
+                                d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5zM5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-bold mb-4 text-gray-900">Automation</h3>
+                    <div class="space-y-2 text-sm text-gray-600">
+                        <div>n8n</div>
+                        <div>Zapier</div>
+                        <div>Gohighlevel</div>
+                        <div>Webhooks</div>
+                        <div>Make</div>
+                    </div>
+                </div>
+
+                <!-- Development -->
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-primary-100 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-10 h-10 text-primary-600" fill="currentColor" viewBox="0 0 20 20">
+                            <path
+                                d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6zM14 9a1 1 0 00-1 1v6a1 1 0 001 1h2a1 1 0 001-1v-6a1 1 0 00-1-1h-2z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-bold mb-4 text-gray-900">Development</h3>
+                    <div class="space-y-2 text-sm text-gray-600">
+                        <div>React.js</div>
+                        <div>Laravel + livewire</div>
+                        <div>Php</div>
+                        <div>Mysql</div>
+                    </div>
+                </div>
+
+                <!-- Cloud & DevOps -->
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-primary-100 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-10 h-10 text-primary-600" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M5.5 16a3.5 3.5 0 01-.369-6.98 4 4 0 117.753-1.977A4.5 4.5 0 1113.5 16h-8z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-bold mb-4 text-gray-900">Cloud & DevOps</h3>
+                    <div class="space-y-2 text-sm text-gray-600">
+                        <div>AWS</div>
+                        <div>Docker</div>
+                        <div>Git</div>
+                        <div>CI/CD</div>
+                        <div>Monitoring</div>
+                        <div>Hostinger</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-24 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <div
+                    class="inline-block bg-primary-100 text-primary-700 px-4 py-2 rounded-full text-sm font-medium mb-6">
+                    Portfolio</div>
+                <h2 class="text-4xl font-bold mb-6 text-gray-900 section-title">Featured Projects</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto body-text">Recent work across automation, Robotics,
+                    and web
+                    development.</p>
+            </div>
+
+            <div class="grid lg:grid-cols-3 gap-8">
+                <!-- Project 1 - Elevate Digital Solutions -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100 card-hover">
+                    <div class="cursor-pointer"
+                        onclick="openImageModal('./image/Screenshot 2025-10-14 122411.png', 'Elevate Digital Solutions Website')">
+                        <img src="./image/Screenshot 2025-10-14 122411.png" alt="Elevate Digital Solutions"
+                            class="w-full h-48 object-cover hover:opacity-90 transition">
+                    </div>
+                    <div class="p-8">
+                        <div class="flex items-center justify-between mb-4">
+                            <span
+                                class="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-xs font-medium">Website</span>
+                            <span class="text-sm text-gray-500">2025</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3 text-gray-900">Elevate Digital Solutions Website</h3>
+                        <p class="text-gray-600 mb-6 body-text">All-in-one digital growth platform for businesses—offers
+                            AI-powered appointment booking, sales funnels, automated email/SMS marketing, e-commerce,
+                            CRM, booking calendars, social media management, and more. Built entirely using GoHighLevel
+                            for fast, modern, and scalable deployment.</p>
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="bg-gray-100 text-gray-700 px-2 py-1 rounded text-xs">GoHighLevel</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <a href="https://elevatedigitalsolutions.com.au" target="_blank" rel="noopener noreferrer"
+                                class="inline-flex items-center text-primary-600 hover:text-primary-700 font-medium text-sm">
+                                <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                                </svg>
+                                Visit Website
+
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100 card-hover">
+                    <div class="h-48 bg-gradient-to-br from-primary-500 to-primary-700 flex items-center justify-center cursor-pointer"
+                        onclick="openImageModal('./image/Google Rename using appscript ang every pixel.png', 'Automated Image Renaming System')">
+                        <img src="./image/Google Rename using appscript ang every pixel.png"
+                            alt="Image Renaming Automation" class="max-h-full max-w-full hover:opacity-90 transition">
+                    </div>
+                    <div class="p-8">
+                        <div class="flex items-center justify-between mb-4">
+                            <span
+                                class="bg-green-100 text-green-700 px-3 py-1 rounded-full text-xs font-medium">Automation</span>
+                            <span class="text-sm text-gray-500">2025</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3 text-gray-900">Automated Image File Renaming System using
+                            Everypixel API</h3>
+                        <p class="text-gray-600 mb-6 body-text">This automation project automatically renames all image
+                            files stored in Google Drive using the Everypixel API. The system scans the Drive for image
+                            formats such as .jpg, .jpeg, and .png, then retrieves descriptive metadata for each image
+                            through the Everypixel service. Based on the image content, it generates meaningful and
+                            organized filenames.</p>
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="bg-gray-100 text-gray-700 px-2 py-1 rounded text-xs">n8n</span>
+                            <span class="bg-gray-100 text-gray-700 px-2 py-1 rounded text-xs">Everypixel API</span>
+                            <span class="bg-gray-100 text-gray-700 px-2 py-1 rounded text-xs">Appscript</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <div class="text-sm text-gray-500">
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100 card-hover">
+                    <div class="h-48 bg-gradient-to-br from-primary-700 to-primary-800 flex items-center justify-center cursor-pointer"
+                        onclick="openImageModal('./image/notification when someone update or add.png', 'Google Drive Notification System')">
+                        <img src="./image/notification when someone update or add.png" alt="Drive Notification"
+                            class="max-h-full max-w-full hover:opacity-90 transition">
+                    </div>
+                    <div class="p-8">
+                        <div class="flex items-center justify-between mb-4">
+                            <span
+                                class="bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-xs font-medium">Automation</span>
+                            <span class="text-sm text-gray-500">2025</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3 text-gray-900">Automated QA System</h3>
+                        <p class="text-gray-600 mb-6 body-text">This automation monitors a Google Drive folder and sends
+                            instant Telegram notifications whenever a file is added, updated, or modified. It ensures
+                            that all team members stay informed in real time without manually checking Drive.</p>
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="bg-gray-100 text-gray-700 px-2 py-1 rounded text-xs">google sheets</span>
+                            <span class="bg-gray-100 text-gray-700 px-2 py-1 rounded text-xs">n8n</span>
+
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <div class="text-sm text-gray-500">
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hidden Projects (Initially Hidden) -->
+            <div id="hidden-projects" class="hidden grid lg:grid-cols-3 gap-8 mt-8">
+                <!-- Project 4 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100 card-hover">
+                    <div class="h-48 bg-gradient-to-br from-blue-500 to-blue-700 flex items-center justify-center cursor-pointer"
+                        onclick="openImageModal('./image/Tiktok Script generator.png', 'TikTok Script Generator')">
+                        <img src="./image/Tiktok Script generator.png" alt="TikTok Script Generator"
+                            class="max-h-full max-w-full hover:opacity-90 transition">
+                    </div>
+                    <div class="p-8">
+                        <div class="flex items-center justify-between mb-4">
+                            <span
+                                class="bg-cyan-100 text-cyan-700 px-3 py-1 rounded-full text-xs font-medium">Automation</span>
+                            <span class="text-sm text-gray-500">2025</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3 text-gray-900">TikTok Script Generation Automation using
+                            OpenAI Transcription</h3>
+                        <p class="text-gray-600 mb-6 body-text">This automation uses OpenAI’s transcription and text
+                            generation capabilities to automatically create engaging TikTok scripts. The system takes an
+                            uploaded audio or video file, transcribes the spoken content into text, and then uses AI to
+                            generate a ready-to-post TikTok script based on the topic or context.</p>
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="bg-gray-100 text-gray-700 px-2 py-1 rounded text-xs">OpenAI</span>
+                            <span class="bg-gray-100 text-gray-700 px-2 py-1 rounded text-xs">n8n</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <div class="text-sm text-gray-500">
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100 card-hover">
+                    <div class="h-48 bg-gradient-to-br from-orange-500 to-orange-700 flex items-center justify-center cursor-pointer"
+                        onclick="openImageModal('./image/bgpear.png', 'Fish Trading System - Laravel + Livewire')">
+                        <img src="./image/bgpear.png" alt="Fish Trading System"
+                            class="max-h-full max-w-full hover:opacity-90 transition">
+                    </div>
+                    <div class="p-8">
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="bg-orange-100 text-orange-700 px-3 py-1 rounded-full text-xs font-medium">Web
+                                App</span>
+                            <span class="text-sm text-gray-500">2025</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3 text-gray-900">Fish Trading System (Built with Laravel +
+                            Livewire)</h3>
+                        <p class="text-gray-600 mb-6 body-text">The Fish Trading System is a web-based application
+                            developed using Laravel and Livewire, designed to digitalize and simplify the fish
+                            trading process between suppliers, dealers, and retailers. The system allows users to
+                            list, manage, and purchase fish products in real time while maintaining accurate records
+                            of transactions and inventory.
+
+                            By leveraging Laravel’s robust backend capabilities and Livewire’s real-time
+                            interactivity, the platform provides a seamless user experience — enabling instant
+                            updates, dynamic dashboards, and efficient communication between trading groups.</p>
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="bg-gray-100 text-gray-700 px-2 py-1 rounded text-xs">Laravel</span>
+                            <span class="bg-gray-100 text-gray-700 px-2 py-1 rounded text-xs">Livewire</span>
+                            <span class="bg-gray-100 text-gray-700 px-2 py-1 rounded text-xs">Mysql</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <a href="https://bgpearl.click/login" target="_blank" rel="noopener noreferrer"
+                                class="inline-flex items-center text-primary-600 hover:text-primary-700 font-medium text-sm">
+                                <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                                </svg>
+                                View Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100 card-hover">
+                    <div class="h-48 bg-gradient-to-br from-indigo-500 to-indigo-700 flex items-center justify-center cursor-pointer"
+                        onclick="openImageModal('./image/telebot.png', 'Telegram AI Content Pipeline')">
+                        <img src="./image/telebot.png" alt="Telegram Bot"
+                            class="max-h-full max-w-full hover:opacity-90 transition">
+                    </div>
+                    <div class="p-8">
+                        <div class="flex items-center justify-between mb-4">
+                            <span
+                                class="bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full text-xs font-medium">Automation</span>
+                            <span class="text-sm text-gray-500">2025</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3 text-gray-900">Telegram Upload & AI Description Pipeline</h3>
+                        <p class="text-gray-600 mb-6 body-text">This automation streamlines content creation from raw
+                            media to published post. Users send audio or video files to a Telegram bot. The bot uploads
+                            the file to cloud storage, calls OpenAI to transcribe (for audio/video) or analyze (for
+                            images), and runs a prompt-driven AI agent to generate a concise, SEO-friendly description,
+                            caption, and post metadata (hashtags, suggested posting time, short alt text). The pipeline
+                            then sends the media + generated metadata to a target upload-post platform (CMS, social
+                            scheduler, or your Fish Trading platform uploader) via API to queue or publish the post.
+
+                            This reduces manual editing, speeds up content workflows, and helps creators maintain
+                            consistent messaging across platforms.</p>
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="bg-gray-100 text-gray-700 px-2 py-1 rounded text-xs">Telebot API</span>
+                            <span class="bg-gray-100 text-gray-700 px-2 py-1 rounded text-xs">n8n</span>
+                            <span class="bg-gray-100 text-gray-700 px-2 py-1 rounded text-xs">OpenAi</span>
+                            <span class="bg-gray-100 text-gray-700 px-2 py-1 rounded text-xs">Upload-Post APi</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <div class="text-sm text-gray-500">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 6 - WordPress Blog Automation -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100 card-hover">
+                    <div class="h-48 bg-gradient-to-br from-indigo-500 to-indigo-700 flex items-center justify-center cursor-pointer"
+                        onclick="openImageModal('./image/blog.png', 'Automated WordPress Blog Creation')">
+                        <img src="./image/blog.png" alt="WordPress Blog Automation"
+                            class="max-h-full max-w-full hover:opacity-90 transition">
+                    </div>
+                    <div class="p-8">
+                        <div class="flex items-center justify-between mb-4">
+                            <span
+                                class="bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full text-xs font-medium">Automation
+                                & Web page</span>
+                            <span class="text-sm text-gray-500">2025</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3 text-gray-900">Automated WordPress Blog Creation for Cristalle
+                            Belo</h3>
+                        <p class="text-gray-600 mb-6 body-text">The Automated Blog Creation System is a smart content
+                            generation tool that automatically creates and publishes blog posts on WordPress. It
+                            combines real-time news data, factual context, and high-quality images using GNews, Tavily,
+                            and Pexels APIs, enhanced by OpenAI for natural language generation.
+
+                            The system fetches trending or niche-specific articles from GNews, expands them with
+                            research insights from Tavily, sources visually relevant images from Pexels, and uses OpenAI
+                            prompts to write a coherent, SEO-friendly blog post. Finally, it uploads and publishes the
+                            post automatically on a connected WordPress site via the REST API.</p>
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="bg-gray-100 text-gray-700 px-2 py-1 rounded text-xs">Gnews API</span>
+                            <span class="bg-gray-100 text-gray-700 px-2 py-1 rounded text-xs">n8n</span>
+                            <span class="bg-gray-100 text-gray-700 px-2 py-1 rounded text-xs">OpenAi</span>
+                            <span class="bg-gray-100 text-gray-700 px-2 py-1 rounded text-xs">Tavily APi</span>
+                            <span class="bg-gray-100 text-gray-700 px-2 py-1 rounded text-xs">WordPress</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <div class="text-sm text-gray-500">
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 7 - AI Chatbot -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100 card-hover">
+                    <div class="h-48 bg-gradient-to-br from-indigo-500 to-indigo-700 flex items-center justify-center cursor-pointer"
+                        onclick="openImageModal('./image/chatbot.png', 'AI Chatbot for Feel Great Products')">
+                        <img src="./image/chatbot.png" alt="AI Chatbot"
+                            class="max-h-full max-w-full hover:opacity-90 transition">
+                    </div>
+                    <div class="p-8">
+                        <div class="flex items-center justify-between mb-4">
+                            <span
+                                class="bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full text-xs font-medium">Automation</span>
+                            <span class="text-sm text-gray-500">2025</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3 text-gray-900">AI Chatbot for Cristalle Belo’s Feel Great
+                            Products</h3>
+                        <p class="text-gray-600 mb-6 body-text">This project is an intelligent AI-powered chatbot
+                            developed for Cristalle Belo to assist customers with inquiries about her Feel Great product
+                            line. The chatbot provides instant, accurate, and friendly responses about product benefits,
+                            usage, pricing, and availability.
+
+                            Built using OpenAI API and integrated with a web-based interface, the chatbot acts as a
+                            virtual product specialist — guiding customers through product comparisons, wellness tips,
+                            and personalized recommendations. It enhances customer engagement and reduces response time
+                            by automating frequently asked questions.</p>
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="bg-gray-100 text-gray-700 px-2 py-1 rounded text-xs">Gnews API</span>
+                            <span class="bg-gray-100 text-gray-700 px-2 py-1 rounded text-xs">n8n</span>
+                            <span class="bg-gray-100 text-gray-700 px-2 py-1 rounded text-xs">OpenAi</span>
+                            <span class="bg-gray-100 text-gray-700 px-2 py-1 rounded text-xs">Tavily APi</span>
+                            <span class="bg-gray-100 text-gray-700 px-2 py-1 rounded text-xs">WordPress</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <div class="text-sm text-gray-500">
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <!-- View More Projects Button -->
+            <div class="text-center mt-12">
+                <button id="view-all-projects-btn" onclick="toggleProjects()"
+                    class="inline-flex items-center bg-primary-600 text-white px-8 py-4 rounded-lg font-semibold hover:bg-primary-700 transition duration-300 shadow-lg hover:shadow-xl">
+                    <span id="view-projects-text">View All Projects</span>
+                    <svg id="view-projects-icon" class="w-5 h-5 ml-2 transition-transform" fill="none"
+                        stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </button>
+                <p id="view-projects-subtitle" class="text-sm text-gray-500 mt-4">Interested in seeing more? Click to
+                    view additional projects.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Automation Integration Demo -->
+    <section id="automation-demo" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <div
+                    class="inline-block bg-primary-100 text-primary-700 px-4 py-2 rounded-full text-sm font-medium mb-6">
+                    Live Demo</div>
+                <h2 class="text-4xl font-bold mb-6 text-gray-900 section-title">Real-Time Automation Demo</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto body-text">Watch actual automation workflows process
+                    data in real-time. Try the interactive demos below!</p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-12">
+                <!-- Email to Spreadsheet Automation Demo -->
+                <div class="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-2xl p-8 border-2 border-blue-200">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 bg-blue-600 rounded-xl flex items-center justify-center mr-4">
+                            <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+                                <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold text-gray-900">Email Parser Demo</h3>
+                            <p class="text-sm text-gray-600">Extract data from email and save to spreadsheet</p>
+                        </div>
+                    </div>
+
+                    <!-- Input Form -->
+                    <div class="bg-white rounded-xl p-6 mb-4 shadow-sm">
+                        <label class="block text-sm font-medium text-gray-700 mb-2">Paste Sample Email:</label>
+                        <textarea id="email-input" rows="6"
+                            class="w-full border-2 border-gray-300 rounded-lg p-3 text-sm focus:outline-none focus:border-blue-500"
+                            placeholder="From: john@company.com&#x0a;Subject: Project Quote Request&#x0a;&#x0a;Hi, I need a quote for:&#x0a;Product: Arduino IoT Kit&#x0a;Quantity: 50&#x0a;Budget: $5000&#x0a;Deadline: Nov 30, 2025"></textarea>
+
+                        <button id="process-email"
+                            class="mt-4 w-full bg-blue-600 text-white py-3 px-6 rounded-lg hover:bg-blue-700 transition duration-300 font-medium flex items-center justify-center">
+                            <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M13 10V3L4 14h7v7l9-11h-7z" />
+                            </svg>
+                            Process & Extract Data
+                        </button>
+                    </div>
+
+                    <!-- Results -->
+                    <div id="email-results" class="hidden">
+                        <div class="bg-green-50 border-2 border-green-300 rounded-xl p-6">
+                            <div class="flex items-center mb-4">
+                                <svg class="w-6 h-6 text-green-600 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd"
+                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                                <h4 class="font-bold text-green-800">Data Extracted Successfully!</h4>
+                            </div>
+                            <div class="bg-white rounded-lg p-4 space-y-2 text-sm">
+                                <div class="grid grid-cols-2 gap-2">
+                                    <span class="font-medium text-gray-700">From:</span>
+                                    <span id="result-from" class="text-gray-900"></span>
+
+                                    <span class="font-medium text-gray-700">Product:</span>
+                                    <span id="result-product" class="text-gray-900"></span>
+
+                                    <span class="font-medium text-gray-700">Quantity:</span>
+                                    <span id="result-quantity" class="text-gray-900"></span>
+
+                                    <span class="font-medium text-gray-700">Budget:</span>
+                                    <span id="result-budget" class="text-gray-900"></span>
+
+                                    <span class="font-medium text-gray-700">Deadline:</span>
+                                    <span id="result-deadline" class="text-gray-900"></span>
+                                </div>
+                            </div>
+                            <div class="mt-4 text-xs text-green-700 flex items-center">
+                                <svg class="w-4 h-4 mr-1 animate-spin" fill="none" viewBox="0 0 24 24">
+                                    <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor"
+                                        stroke-width="4"></circle>
+                                    <path class="opacity-75" fill="currentColor"
+                                        d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z">
+                                    </path>
+                                </svg>
+                                Saving to Google Sheets... ✓ Row added at <span id="timestamp"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Text Analysis & Sentiment Detection Demo -->
+                <div class="bg-gradient-to-br from-purple-50 to-pink-50 rounded-2xl p-8 border-2 border-purple-200">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 bg-purple-600 rounded-xl flex items-center justify-center mr-4">
+                            <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd"
+                                    d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold text-gray-900">AI Text Analyzer</h3>
+                            <p class="text-sm text-gray-600">Analyze sentiment & extract keywords</p>
+                        </div>
+                    </div>
+
+                    <!-- Input -->
+                    <div class="bg-white rounded-xl p-6 mb-4 shadow-sm">
+                        <label class="block text-sm font-medium text-gray-700 mb-2">Enter Text to Analyze:</label>
+                        <textarea id="text-input" rows="5"
+                            class="w-full border-2 border-gray-300 rounded-lg p-3 text-sm focus:outline-none focus:border-purple-500"
+                            placeholder="Type any text here... Customer feedback, reviews, emails, etc.&#x0a;&#x0a;Example: I absolutely love this product! The automation features saved me hours of work. Best purchase ever!"></textarea>
+
+                        <button id="analyze-text"
+                            class="mt-4 w-full bg-purple-600 text-white py-3 px-6 rounded-lg hover:bg-purple-700 transition duration-300 font-medium flex items-center justify-center">
+                            <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+                            </svg>
+                            Analyze with AI
+                        </button>
+                    </div>
+
+                    <!-- Analysis Results -->
+                    <div id="analysis-results" class="hidden">
+                        <div class="space-y-3">
+                            <!-- Sentiment -->
+                            <div class="bg-white rounded-lg p-4 border-2 border-gray-200">
+                                <div class="flex items-center justify-between mb-2">
+                                    <span class="text-sm font-medium text-gray-700">Sentiment:</span>
+                                    <span id="sentiment-badge" class="px-3 py-1 rounded-full text-sm font-bold"></span>
+                                </div>
+                                <div class="w-full bg-gray-200 rounded-full h-2">
+                                    <div id="sentiment-bar" class="h-2 rounded-full transition-all duration-500"></div>
+                                </div>
+                            </div>
+
+                            <!-- Statistics -->
+                            <div class="bg-white rounded-lg p-4 border-2 border-gray-200">
+                                <h4 class="text-sm font-medium text-gray-700 mb-3">Text Statistics:</h4>
+                                <div class="grid grid-cols-3 gap-3 text-center">
+                                    <div>
+                                        <div id="word-count" class="text-2xl font-bold text-purple-600">0</div>
+                                        <div class="text-xs text-gray-600">Words</div>
+                                    </div>
+                                    <div>
+                                        <div id="char-count" class="text-2xl font-bold text-purple-600">0</div>
+                                        <div class="text-xs text-gray-600">Characters</div>
+                                    </div>
+                                    <div>
+                                        <div id="sentence-count" class="text-2xl font-bold text-purple-600">0</div>
+                                        <div class="text-xs text-gray-600">Sentences</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Keywords -->
+                            <div class="bg-white rounded-lg p-4 border-2 border-gray-200">
+                                <h4 class="text-sm font-medium text-gray-700 mb-2">Top Keywords:</h4>
+                                <div id="keywords" class="flex flex-wrap gap-2"></div>
+                            </div>
+
+                            <div class="bg-purple-50 rounded-lg p-3 text-xs text-purple-700">
+                                ✓ Analysis complete in 0.3s • Ready to automate this workflow
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Real Stats Counter -->
+            <div class="mt-12 grid grid-cols-2 md:grid-cols-4 gap-6">
+                <div class="bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl p-6 text-center">
+                    <div id="live-counter-1" class="text-3xl font-bold text-blue-600 mb-2">0</div>
+                    <div class="text-sm text-gray-600">Demos Triggered Today</div>
+                </div>
+                <div class="bg-gradient-to-br from-green-50 to-green-100 rounded-xl p-6 text-center">
+                    <div id="live-counter-2" class="text-3xl font-bold text-green-600 mb-2">0</div>
+                    <div class="text-sm text-gray-600">Data Points Processed</div>
+                </div>
+                <div class="bg-gradient-to-br from-purple-50 to-purple-100 rounded-xl p-6 text-center">
+                    <div class="text-3xl font-bold text-purple-600 mb-2">0.2s</div>
+                    <div class="text-sm text-gray-600">Avg Processing Time</div>
+                </div>
+                <div class="bg-gradient-to-br from-orange-50 to-orange-100 rounded-xl p-6 text-center">
+                    <div class="text-3xl font-bold text-orange-600 mb-2">100%</div>
+                    <div class="text-sm text-gray-600">Success Rate</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="bg-white rounded-xl p-6 mb-6 border-2 border-dashed border-gray-200">
+        <div class="flex items-center justify-between mb-4">
+            <span class="text-sm font-medium text-gray-600">Active Workflows</span>
+            <div class="flex items-center space-x-2">
+                <div class="w-2 h-2 bg-green-500 rounded-full"></div>
+                <span class="text-sm text-green-600">Running</span>
+            </div>
+        </div>
+
+        <!-- Workflow Visualization -->
+        <div class="space-y-4">
+            <div class="flex items-center space-x-4">
+                <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
+                    <svg class="w-6 h-6 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+                        <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+                    </svg>
+                </div>
+                <div class="flex-1">
+                    <div class="h-2 bg-gray-200 rounded-full">
+                        <div class="h-2 bg-blue-500 rounded-full workflow-progress" style="width: 0%">
+                        </div>
+                    </div>
+                </div>
+                <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center">
+                    <svg class="w-6 h-6 text-green-600" fill="currentColor" viewBox="0 0 20 20">
+                        <path
+                            d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6zM14 9a1 1 0 00-1 1v6a1 1 0 001 1h2a1 1 0 001-1v-6a1 1 0 00-1-1h-2z" />
+                    </svg>
+                </div>
+            </div>
+            <div class="text-center">
+                <span class="text-sm text-gray-600">Email → Process → Database</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="space-y-4">
+        <button id="trigger-workflow"
+            class="w-full bg-primary-600 text-white py-3 px-6 rounded-lg hover:bg-primary-700 transition duration-300 font-medium">
+            Trigger Sample Workflow
+        </button>
+        <div id="workflow-status" class="hidden bg-green-50 border border-green-200 rounded-lg p-4">
+            <div class="flex items-center">
+                <svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd"
+                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                        clip-rule="evenodd" />
+                </svg>
+                <span class="text-green-700 font-medium">Workflow executed successfully!</span>
+            </div>
+            <p class="text-green-600 text-sm mt-2">Data processed and stored in 1.2 seconds</p>
+        </div>
+    </div>
+    </div>
+
+    <!-- Real-time Integration Monitor -->
+    <div class="bg-gray-50 rounded-2xl p-8">
+        <h3 class="text-2xl font-bold mb-6 text-gray-900">Integration Monitor</h3>
+        <div class="space-y-4">
+            <!-- API Status -->
+            <div class="bg-white rounded-lg p-4 border border-gray-200">
+                <div class="flex items-center justify-between mb-2">
+                    <span class="font-medium text-gray-900">API Endpoints</span>
+                    <span class="text-xs bg-green-100 text-green-700 px-2 py-1 rounded-full">All
+                        Active</span>
+                </div>
+                <div class="grid grid-cols-3 gap-2 text-xs">
+                    <div class="text-center">
+                        <div class="w-2 h-2 bg-green-500 rounded-full mx-auto mb-1"></div>
+                        <span class="text-gray-600">CRM</span>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-2 h-2 bg-green-500 rounded-full mx-auto mb-1"></div>
+                        <span class="text-gray-600">Email</span>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-2 h-2 bg-green-500 rounded-full mx-auto mb-1"></div>
+                        <span class="text-gray-600">Slack</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Live Metrics -->
+            <div class="bg-white rounded-lg p-4 border border-gray-200">
+                <h4 class="font-medium text-gray-900 mb-3">Today's Activity</h4>
+                <div class="space-y-3">
+                    <div class="flex justify-between items-center">
+                        <span class="text-sm text-gray-600">Workflows Executed</span>
+                        <span id="workflow-count" class="font-bold text-primary-600">247</span>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <span class="text-sm text-gray-600">Data Points Processed</span>
+                        <span id="data-count" class="font-bold text-primary-600">1,834</span>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <span class="text-sm text-gray-600">Avg Response Time</span>
+                        <span class="font-bold text-green-600">0.8s</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Integration Test -->
+            <button id="test-integration"
+                class="w-full bg-green-600 text-white py-3 px-6 rounded-lg hover:bg-green-700 transition duration-300 font-medium">
+                Test Live Integration
+            </button>
+            <div id="integration-result" class="hidden bg-blue-50 border border-blue-200 rounded-lg p-4">
+                <div class="text-blue-700 font-medium mb-2">Integration Test Results:</div>
+                <ul class="text-blue-600 text-sm space-y-1">
+                    <li>✓ CRM connection: 45ms</li>
+                    <li>✓ Email service: 67ms</li>
+                    <li>✓ Database sync: 23ms</li>
+                    <li>✓ Webhook delivery: 12ms</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-24 gradient-bg text-white">
+        <div class="max-w-4xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold mb-6 section-title">Ready to Start Your Project?</h2>
+                <p class="text-xl text-primary-200 body-text">Let's discuss how I can help bring your engineering vision
+                    to life with cutting-edge technology and proven expertise.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8 mb-16">
+                <div class="text-center">
+                    <div
+                        class="w-16 h-16 bg-white bg-opacity-10 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+                            <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-semibold mb-2">Email</h3>
+                    <p class="text-primary-200">gepulganepj06@gmail.com</p>
+                </div>
+
+                <div class="text-center">
+                    <div
+                        class="w-16 h-16 bg-white bg-opacity-10 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 20 20">
+                            <path
+                                d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-semibold mb-2">Phone</h3>
+                    <p class="text-primary-200">+639553892477</p>
+                </div>
+
+                <div class="text-center">
+                    <div
+                        class="w-16 h-16 bg-white bg-opacity-10 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd"
+                                d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-semibold mb-2">Location</h3>
+                    <p class="text-primary-200">Norala, South Cotabato, PH</p>
+                </div>
+            </div>
+
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="mailto:gepulganepj06@gmail.com"
+                    class="bg-white text-primary-700 px-8 py-4 rounded-lg font-semibold hover:bg-primary-50 transition duration-300 text-center">Send
+                    Message</a>
+                <a href="https://www.linkedin.com/in/preal-jesse-gepulgane-665505215" target="_blank"
+                    rel="noopener noreferrer"
+                    class="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-primary-700 transition duration-300 text-center">LinkedIn
+                    Profile</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Details Modal -->
+    <div id="project-modal"
+        class="hidden fixed inset-0 z-50 overflow-y-auto bg-black bg-opacity-50 flex items-center justify-center p-4">
+        <div class="bg-white rounded-2xl max-w-4xl w-full max-h-[90vh] overflow-y-auto shadow-2xl">
+            <!-- Modal Header -->
+            <div
+                class="sticky top-0 bg-white border-b border-gray-200 px-6 py-4 flex items-center justify-between rounded-t-2xl z-10">
+                <h3 id="modal-title" class="text-2xl font-bold text-gray-900"></h3>
+                <button id="close-modal" onclick="closeProjectModal()"
+                    class="text-gray-400 hover:text-gray-600 transition-colors">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12">
+                        </path>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Modal Content -->
+            <div class="p-6">
+                <!-- Project Image -->
+                <div class="w-full mb-6">
+                    <img id="modal-image" src="" alt="" class="w-full h-auto rounded-xl object-cover">
+                </div>
+
+                <!-- Project Description -->
+                <div class="mb-6">
+                    <h4 class="text-lg font-semibold text-gray-900 mb-3">Project Overview</h4>
+                    <p id="modal-description" class="text-gray-600 leading-relaxed"></p>
+                </div>
+
+                <!-- Technologies -->
+                <div class="mb-6">
+                    <h4 class="text-lg font-semibold text-gray-900 mb-3">Technologies Used</h4>
+                    <div id="modal-technologies" class="flex flex-wrap gap-2">
+                        <!-- Technologies will be inserted here -->
+                    </div>
+                </div>
+
+                <!-- Key Features -->
+                <div class="mb-6">
+                    <h4 class="text-lg font-semibold text-gray-900 mb-3">Key Features</h4>
+                    <ul id="modal-features" class="space-y-2">
+                        <!-- Features will be inserted here -->
+                    </ul>
+                </div>
+
+                <!-- Project URL -->
+                <div id="modal-url-container" class="mb-6">
+                    <a id="modal-url" href="#" target="_blank" rel="noopener noreferrer"
+                        class="inline-flex items-center text-primary-600 hover:text-primary-700 font-medium">
+                        <span>Visit Project</span>
+                        <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                        </svg>
+                    </a>
+                </div>
+
+                <!-- Action Buttons -->
+                <div class="flex gap-4">
+                    <button id="close-modal-btn" onclick="closeProjectModal()"
+                        class="flex-1 bg-primary-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-primary-700 transition duration-300">
+                        Close
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Image Zoom Modal -->
+    <div id="image-modal"
+        class="hidden fixed inset-0 z-[100] bg-black bg-opacity-90 flex items-center justify-center p-4"
+        onclick="closeImageModal()">
+        <button onclick="closeImageModal()" class="absolute top-6 right-6 text-white hover:text-gray-300 z-[101]">
+            <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+        </button>
+        <div class="max-w-7xl max-h-[90vh] relative" onclick="event.stopPropagation()">
+            <img id="modal-image-src" src="" alt=""
+                class="max-w-full max-h-[90vh] object-contain rounded-lg shadow-2xl">
+            <div id="modal-image-title" class="text-white text-center mt-4 text-xl font-semibold"></div>
+        </div>
+    </div>
+
+    <!-- AI Chatbot -->
+    <div id="chatbot-container" class="fixed bottom-6 right-6 z-50">
+        <!-- Chatbot Toggle Button -->
+        <button id="chatbot-toggle" onclick="
+                var win = document.getElementById('chatbot-window');
+                var chatIcon = document.getElementById('chat-icon');
+                var closeIcon = document.getElementById('close-icon');
+                if (win.classList.contains('hidden')) {
+                    win.classList.remove('hidden');
+                    chatIcon.classList.add('hidden');
+                    closeIcon.classList.remove('hidden');
+                    console.log('OPENED');
+                } else {
+                    win.classList.add('hidden');
+                    chatIcon.classList.remove('hidden');
+                    closeIcon.classList.add('hidden');
+                    console.log('CLOSED');
+                }
+            "
+            class="w-16 h-16 bg-primary-600 hover:bg-primary-700 text-white rounded-full shadow-lg flex items-center justify-center transition-all duration-300 transform hover:scale-105">
+            <svg id="chat-icon" class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+            </svg>
+            <svg id="close-icon" class="w-8 h-8 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+        </button>
+
+        <!-- Chatbot Window -->
+        <div id="chatbot-window"
+            class="hidden absolute bottom-20 right-0 w-96 h-96 bg-white rounded-2xl shadow-2xl border border-gray-200 flex flex-col overflow-hidden">
+            <!-- Header -->
+            <div class="bg-primary-600 text-white p-4 flex items-center space-x-3">
+                <div class="w-10 h-10 bg-white bg-opacity-20 rounded-full flex items-center justify-center">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
+                        <path
+                            d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3z" />
+                    </svg>
+                </div>
+                <div>
+                    <div class="font-semibold">Chat Support</div>
+                    <div class="text-xs text-primary-200">Available • Quick Response</div>
+                </div>
+            </div>
+
+            <!-- Chat Messages -->
+            <div id="chat-messages" class="flex-1 p-4 overflow-y-auto space-y-4 bg-gray-50">
+                <div class="flex items-start space-x-3">
+                    <div class="w-8 h-8 bg-primary-100 rounded-full flex items-center justify-center flex-shrink-0">
+                        <svg class="w-4 h-4 text-primary-600" fill="currentColor" viewBox="0 0 20 20">
+                            <path
+                                d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3z" />
+                        </svg>
+                    </div>
+                    <div class="bg-white rounded-lg p-3 shadow-sm max-w-xs">
+                        <p class="text-sm text-gray-800">Hello! How can I help you today?</p>
+                        <ul class="text-xs text-gray-600 mt-2 space-y-1">
+                            <li>• Project inquiries</li>
+                            <li>• Technical questions</li>
+                            <li>• Service information</li>
+                            <li>• Schedule a call</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Quick Actions -->
+            <div class="p-3 border-t border-gray-200 bg-white">
+                <div class="grid grid-cols-2 gap-2 mb-3">
+                    <button
+                        class="quick-action bg-gray-100 hover:bg-gray-200 text-gray-700 text-xs py-2 px-3 rounded-lg transition duration-200"
+                        data-message="Tell me about n8n automation services">
+                        n8n Services
+                    </button>
+                    <button
+                        class="quick-action bg-gray-100 hover:bg-gray-200 text-gray-700 text-xs py-2 px-3 rounded-lg transition duration-200"
+                        data-message="I need help with electronics design">
+                        Electronics Design
+                    </button>
+                    <button
+                        class="quick-action bg-gray-100 hover:bg-gray-200 text-gray-700 text-xs py-2 px-3 rounded-lg transition duration-200"
+                        data-message="What are your rates and availability?">
+                        Pricing & Availability
+                    </button>
+                    <button
+                        class="quick-action bg-gray-100 hover:bg-gray-200 text-gray-700 text-xs py-2 px-3 rounded-lg transition duration-200"
+                        data-message="Schedule a consultation call">
+                        Schedule Call
+                    </button>
+                </div>
+
+                <!-- Chat Input -->
+                <div class="flex space-x-2">
+                    <input id="chat-input" type="text" placeholder="Type your message..."
+                        class="flex-1 border border-gray-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent">
+                    <button id="send-message"
+                        class="bg-primary-600 hover:bg-primary-700 text-white p-2 rounded-lg transition duration-200">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <div class="w-8 h-8 bg-primary-600 rounded-lg flex items-center justify-center mr-2">
+                            <span class="text-white font-bold">PJG</span>
+                        </div>
+                        <span class="font-bold text-lg">Preal Jesse Gepulgane</span>
+                    </div>
+                    <p class="text-gray-400 text-sm">Electronics Engineer & AI Automation Specialist delivering
+                        enterprise-grade solutions.</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Services</h4>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li>Electronics Design</li>
+                        <li>n8n Automation</li>
+                        <li>Web Development</li>
+                        <li>Arduino Development</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Expertise</h4>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li>Circuit Design</li>
+                        <li>Workflow Automation</li>
+                        <li>System Integration</li>
+                        <li>Quality Assurance</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Contact</h4>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li>gepulganepj06@gmail.com</li>
+                        <li>+639553892477</li>
+                        <li>Norala, South Cotabato, PH</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 text-center text-sm text-gray-400">
+                <p>&copy; 2025 Preal Jesse Gepulgane. All rights reserved. | Professional Engineering Services</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Global variable for projects state
+        let projectsExpanded = false;
+
+        // Global function to open image modal
+        function openImageModal(imageSrc, imageTitle) {
+            const modal = document.getElementById('image-modal');
+            const modalImage = document.getElementById('modal-image-src');
+            const modalTitle = document.getElementById('modal-image-title');
+
+            if (modal && modalImage && modalTitle) {
+                modalImage.src = imageSrc;
+                modalTitle.textContent = imageTitle;
+                modal.classList.remove('hidden');
+                document.body.style.overflow = 'hidden';
+            }
+        }
+
+        // Global function to close image modal
+        function closeImageModal() {
+            const modal = document.getElementById('image-modal');
+            if (modal) {
+                modal.classList.add('hidden');
+                document.body.style.overflow = '';
+            }
+        }
+
+        // Global function to close modal
+        function closeProjectModal() {
+            const projectModal = document.getElementById('project-modal');
+            if (projectModal) {
+                console.log('Closing modal...');
+                projectModal.classList.add('hidden');
+                document.body.style.overflow = ''; // Restore scrolling
+            }
+        }
+
+        // Global function to toggle projects visibility
+        function toggleProjects() {
+            console.log('toggleProjects called! Current state:', projectsExpanded);
+
+            const hiddenProjects = document.getElementById('hidden-projects');
+            const viewProjectsText = document.getElementById('view-projects-text');
+            const viewProjectsIcon = document.getElementById('view-projects-icon');
+            const viewProjectsSubtitle = document.getElementById('view-projects-subtitle');
+            const viewAllProjectsBtn = document.getElementById('view-all-projects-btn');
+
+            if (!hiddenProjects) {
+                console.error('Hidden projects div not found!');
+                return;
+            }
+
+            projectsExpanded = !projectsExpanded;
+
+            if (projectsExpanded) {
+                console.log('Showing projects...');
+                hiddenProjects.classList.remove('hidden');
+                viewProjectsText.textContent = 'Show Less';
+                viewProjectsIcon.style.transform = 'rotate(180deg)';
+                viewProjectsSubtitle.textContent = 'Showing all projects. Click to collapse.';
+
+                // Re-attach click handlers after a short delay
+                setTimeout(() => {
+                    if (typeof attachProjectClickHandlers === 'function') {
+                        attachProjectClickHandlers();
+                    }
+                    hiddenProjects.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                }, 100);
+            } else {
+                console.log('Hiding projects...');
+                hiddenProjects.classList.add('hidden');
+                viewProjectsText.textContent = 'View All Projects';
+                viewProjectsIcon.style.transform = 'rotate(0deg)';
+                viewProjectsSubtitle.textContent = 'Interested in seeing more? Click to view additional projects.';
+                viewAllProjectsBtn.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            }
+        }
+
+        // Global variable for chatbot state
+        let isChatOpen = false;
+
+        // Global function to toggle chatbot - SIMPLIFIED VERSION
+        function toggleChatbot() {
+            console.log('=== CHATBOT TOGGLE CLICKED ===');
+
+            const chatbotWindow = document.getElementById('chatbot-window');
+            const chatIcon = document.getElementById('chat-icon');
+            const closeIcon = document.getElementById('close-icon');
+
+            console.log('Elements found:', {
+                window: !!chatbotWindow,
+                chatIcon: !!chatIcon,
+                closeIcon: !!closeIcon
+            });
+
+            if (!chatbotWindow || !chatIcon || !closeIcon) {
+                console.error('ERROR: Chatbot elements not found!');
+                alert('Chatbot elements not found! Please refresh the page.');
+                return;
+            }
+
+            isChatOpen = !isChatOpen;
+            console.log('New state:', isChatOpen ? 'OPEN' : 'CLOSED');
+
+            if (isChatOpen) {
+                chatbotWindow.classList.remove('hidden');
+                chatbotWindow.style.display = 'flex'; // Force display
+                chatIcon.classList.add('hidden');
+                closeIcon.classList.remove('hidden');
+                console.log('✓ Chatbot opened');
+            } else {
+                chatbotWindow.classList.add('hidden');
+                chatbotWindow.style.display = 'none'; // Force hide
+                chatIcon.classList.remove('hidden');
+                closeIcon.classList.add('hidden');
+                console.log('✓ Chatbot closed');
+            }
+        }
+
+        // Wait for DOM to be fully loaded
+        window.addEventListener('load', function () {
+            console.log('Page fully loaded, initializing scripts...');
+
+            // Close image modal with Escape key
+            document.addEventListener('keydown', function (e) {
+                if (e.key === 'Escape') {
+                    closeImageModal();
+                }
+            });
+
+            // Mobile menu toggle
+            const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+
+            mobileMenuBtn.addEventListener('click', () => {
+                alert('Mobile menu functionality would be implemented here');
+            });
+
+            // Smooth scrolling for navigation links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
+
+            // Animate skill bars on scroll
+            const observerOptions = {
+                threshold: 0.3,
+                rootMargin: '0px 0px -50px 0px'
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const skillBars = entry.target.querySelectorAll('.skill-bar');
+                        skillBars.forEach(bar => {
+                            const width = bar.style.width;
+                            bar.style.width = '0%';
+                            setTimeout(() => {
+                                bar.style.width = width;
+                            }, 100);
+                        });
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('.skill-bar').forEach(bar => {
+                observer.observe(bar.parentElement.parentElement);
+            });
+
+            // Add fade-in animation to sections on scroll
+            const fadeObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('fade-in-up');
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            document.querySelectorAll('section').forEach(section => {
+                fadeObserver.observe(section);
+            });
+
+            // Theme Switching Functionality
+            const themeSelector = document.getElementById('theme-selector');
+            const themeDropdown = document.getElementById('theme-dropdown');
+            const themeOptions = document.querySelectorAll('.theme-option');
+
+            // Toggle theme dropdown
+            themeSelector.addEventListener('click', (e) => {
+                e.stopPropagation();
+                themeDropdown.classList.toggle('hidden');
+            });
+
+            // Close dropdown when clicking outside
+            document.addEventListener('click', () => {
+                themeDropdown.classList.add('hidden');
+            });
+
+            // Handle theme selection
+            themeOptions.forEach(option => {
+                option.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    const theme = option.getAttribute('data-theme');
+                    changeTheme(theme);
+                    themeDropdown.classList.add('hidden');
+                });
+            });
+
+            // Change theme function
+            function changeTheme(theme) {
+                // Remove all existing theme classes
+                document.body.classList.remove('theme-corporate', 'theme-navy', 'theme-forest', 'theme-executive');
+
+                // Add new theme class
+                document.body.classList.add(`theme-${theme}`);
+
+                // Save theme preference
+                localStorage.setItem('preferred-theme', theme);
+            }
+
+            // Load saved theme on page load
+            document.addEventListener('DOMContentLoaded', () => {
+                const savedTheme = localStorage.getItem('preferred-theme') || 'corporate';
+                changeTheme(savedTheme);
+            });
+
+            // Professional interactions
+            document.querySelectorAll('.card-hover').forEach(card => {
+                card.addEventListener('mouseenter', () => {
+                    card.style.transform = 'translateY(-2px)';
+                });
+
+                card.addEventListener('mouseleave', () => {
+                    card.style.transform = 'translateY(0)';
+                });
+            });
+
+            // ===== PROJECT MODAL FUNCTIONALITY =====
+            const projectModal = document.getElementById('project-modal');
+            const closeModalBtn = document.getElementById('close-modal');
+            const closeModalBtnBottom = document.getElementById('close-modal-btn');
+            const modalImage = document.getElementById('modal-image');
+            const modalTitle = document.getElementById('modal-title');
+            const modalDescription = document.getElementById('modal-description');
+            const modalTechnologies = document.getElementById('modal-technologies');
+            const modalFeatures = document.getElementById('modal-features');
+            const modalProjectUrl = document.getElementById('modal-url');
+            const modalUrlContainer = document.getElementById('modal-url-container');
+
+            // Project data with images and descriptions
+            const projectData = {
+                'project-1': {
+                    name: 'Industrial IoT Dashboard',
+                    image: './image/iot-dashboard.jpg', // Replace with your actual image path
+                    description: 'Real-time monitoring dashboard for factory equipment. Tracks machine performance and sends alerts when maintenance is needed. Built to connect with existing systems and help prevent unexpected breakdowns.',
+                    technologies: ['React', 'Node.js', 'n8n', 'PostgreSQL', 'MQTT', 'WebSocket'],
+                    features: [
+                        'Real-time data visualization for 50+ machines',
+                        'Predictive maintenance algorithms with machine learning',
+                        'Automated alert system via email, SMS, and Slack',
+                        'Integration with ERP systems via REST APIs',
+                        'Custom reporting dashboard for management',
+                        'Historical data analysis and trending',
+                        '40% reduction in equipment downtime'
+                    ],
+                    url: 'https://example.com/iot-dashboard'
+                },
+                'project-2': {
+                    name: 'Supply Chain Optimizer',
+                    image: './image/supply-chain.jpg', // Replace with your actual image path
+                    description: 'Automated system that compares prices across vendors and generates purchase orders. Uses machine learning to forecast demand and find the best deals in real-time.',
+                    technologies: ['n8n', 'Python', 'TensorFlow', 'REST APIs', 'MongoDB', 'Redis'],
+                    features: [
+                        'AI-powered demand forecasting with 92% accuracy',
+                        'Automated vendor comparison and selection',
+                        'Real-time pricing integration from 15+ suppliers',
+                        'Intelligent purchase order generation',
+                        'Cost optimization algorithms',
+                        'Automated compliance checking',
+                        '$2M annual cost savings achieved'
+                    ],
+                    url: 'https://example.com/supply-chain'
+                },
+                'project-3': {
+                    name: 'Automated QA System',
+                    image: './image/qa-system.jpg', // Replace with your actual image path
+                    description: 'Automated testing platform for electronics that checks components and generates compliance reports. Speeds up quality control and reduces manual testing errors.',
+                    technologies: ['LabVIEW', 'n8n', 'Python', 'National Instruments Hardware', 'MySQL', 'REST APIs'],
+                    features: [
+                        'Automated testing for 100+ component parameters',
+                        '95% accuracy in defect detection',
+                        'ISO and UL compliance report generation',
+                        'Real-time data logging and analysis',
+                        'Integration with manufacturing execution system',
+                        'Statistical process control (SPC) charts',
+                        '87% reduction in testing time'
+                    ],
+                    url: 'https://example.com/qa-system'
+                },
+                'project-4': {
+                    name: 'Smart Home Controller',
+                    image: './image/smart-home.jpg', // Replace with your actual image path
+                    description: 'Home automation system with voice control and energy monitoring. Control lights, thermostats, and security from your phone or with Alexa/Google Home.',
+                    technologies: ['Arduino', 'React Native', 'MQTT', 'Firebase', 'Alexa SDK', 'Google Home API'],
+                    features: [
+                        'Voice control via Alexa and Google Home',
+                        'Energy usage monitoring and analytics',
+                        'Automated scheduling and scenes',
+                        'Mobile app for iOS and Android',
+                        '15+ device types supported',
+                        'Local and cloud backup',
+                        '30% energy cost reduction achieved'
+                    ],
+                    url: 'https://example.com/smart-home'
+                },
+                'project-5': {
+                    name: 'E-Commerce Platform',
+                    image: './image/ecommerce.jpg', // Replace with your actual image path
+                    description: 'Online store with inventory management, payment processing, and customer analytics. Supports multiple vendors and integrates with shipping providers.',
+                    technologies: ['Next.js', 'TypeScript', 'Stripe', 'MongoDB', 'Redis', 'AWS S3'],
+                    features: [
+                        'Multi-vendor marketplace support',
+                        'Real-time inventory synchronization',
+                        'Advanced product search and filtering',
+                        'Secure payment gateway integration',
+                        'Customer analytics and insights',
+                        'Automated order fulfillment',
+                        '10K+ monthly active users'
+                    ],
+                    url: 'https://example.com/ecommerce'
+                },
+                'project-6': {
+                    name: 'Client Management System',
+                    image: './image/crm.jpg', // Replace with your actual image path
+                    description: 'Custom CRM with automated email follow-ups and task management. Integrates with calendar and email to keep client communications organized.',
+                    technologies: ['Vue.js', 'n8n', 'MySQL', 'Node.js', 'Google Calendar API', 'SendGrid'],
+                    features: [
+                        'Automated email follow-up sequences',
+                        'Task management and assignment',
+                        'Calendar integration and scheduling',
+                        'Client communication history',
+                        'Sales pipeline visualization',
+                        'Custom reporting and analytics',
+                        '30% faster sales cycle'
+                    ],
+                    url: 'https://example.com/crm'
+                }
+            };
+
+            // Function to open modal with project details
+            function openProjectModal(projectId) {
+                const project = projectData[projectId];
+                if (!project) {
+                    console.error('Project not found:', projectId);
+                    return;
+                }
+
+                // Populate modal content
+                modalTitle.textContent = project.name;
+                modalImage.src = project.image;
+                modalImage.alt = project.name;
+                modalDescription.textContent = project.description;
+
+                // Update technologies
+                modalTechnologies.innerHTML = project.technologies
+                    .map(tech => `<span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm font-medium">${tech}</span>`)
+                    .join('');
+
+                // Update features
+                modalFeatures.innerHTML = project.features
+                    .map(feature => `<li class="flex items-start">
+                    <svg class="w-5 h-5 text-green-500 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                    </svg>
+                    <span class="text-gray-700">${feature}</span>
+                </li>`)
+                    .join('');
+
+                // Update project URL
+                if (project.url) {
+                    modalProjectUrl.href = project.url;
+                    modalUrlContainer.classList.remove('hidden');
+                } else {
+                    modalUrlContainer.classList.add('hidden');
+                }
+
+                // Show modal
+                projectModal.classList.remove('hidden');
+                document.body.style.overflow = 'hidden'; // Prevent background scrolling
+            }
+
+            // Note: closeProjectModal is now a global function defined at the top of the script
+
+            // Function to attach click handlers to project cards
+            function attachProjectClickHandlers() {
+                // Popup functionality disabled for all projects
+                // Projects now display all information on their cards
+                console.log('Project click handlers disabled - no popups');
+            }
+
+            // Initial attachment of click handlers
+            attachProjectClickHandlers();
+
+            // Close modal handlers - backup for non-onclick scenarios
+            if (closeModalBtn) {
+                closeModalBtn.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    closeProjectModal();
+                });
+            }
+            if (closeModalBtnBottom) {
+                closeModalBtnBottom.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    closeProjectModal();
+                });
+            }
+
+            // Close modal when clicking on the backdrop (outside the modal content)
+            if (projectModal) {
+                projectModal.addEventListener('click', function (e) {
+                    // Only close if clicking directly on the backdrop, not on the modal content
+                    if (e.target === projectModal) {
+                        closeProjectModal();
+                    }
+                });
+            }
+
+            // Close modal with Escape key
+            document.addEventListener('keydown', function (e) {
+                const projectModal = document.getElementById('project-modal');
+                if (e.key === 'Escape' && projectModal && !projectModal.classList.contains('hidden')) {
+                    closeProjectModal();
+                }
+            });
+
+            // View All Projects - Backup event listener (onclick is primary)
+            const viewAllProjectsBtn = document.getElementById('view-all-projects-btn');
+            const hiddenProjects = document.getElementById('hidden-projects');
+
+            console.log('View All Projects Button:', viewAllProjectsBtn);
+            console.log('Hidden Projects Div:', hiddenProjects);
+
+            // ===== LIVE AUTOMATION DEMOS =====
+
+            // Email Parser Demo
+            const processEmailBtn = document.getElementById('process-email');
+            const emailInput = document.getElementById('email-input');
+            const emailResults = document.getElementById('email-results');
+
+            if (processEmailBtn) {
+                processEmailBtn.addEventListener('click', () => {
+                    const emailText = emailInput.value;
+
+                    if (!emailText.trim()) {
+                        alert('Please enter sample email text!');
+                        return;
+                    }
+
+                    processEmailBtn.disabled = true;
+                    processEmailBtn.innerHTML = '<svg class="animate-spin w-5 h-5 mr-2" fill="none" viewBox="0 0 24 24"><circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle><path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path></svg> Processing...';
+
+                    // Simulate processing
+                    setTimeout(() => {
+                        // Extract data using regex
+                        const fromMatch = emailText.match(/From:\s*([^\n]+)/i);
+                        const productMatch = emailText.match(/Product:\s*([^\n]+)/i);
+                        const quantityMatch = emailText.match(/Quantity:\s*(\d+)/i);
+                        const budgetMatch = emailText.match(/Budget:\s*\$?([\d,]+)/i);
+                        const deadlineMatch = emailText.match(/Deadline:\s*([^\n]+)/i);
+
+                        // Update results
+                        document.getElementById('result-from').textContent = fromMatch ? fromMatch[1] : 'N/A';
+                        document.getElementById('result-product').textContent = productMatch ? productMatch[1] : 'N/A';
+                        document.getElementById('result-quantity').textContent = quantityMatch ? quantityMatch[1] : 'N/A';
+                        document.getElementById('result-budget').textContent = budgetMatch ? '$' + budgetMatch[1] : 'N/A';
+                        document.getElementById('result-deadline').textContent = deadlineMatch ? deadlineMatch[1] : 'N/A';
+                        document.getElementById('timestamp').textContent = new Date().toLocaleTimeString();
+
+                        // Show results
+                        emailResults.classList.remove('hidden');
+                        processEmailBtn.disabled = false;
+                        processEmailBtn.innerHTML = '<svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg> Process & Extract Data';
+
+                        // Update live counter
+                        const counter1 = document.getElementById('live-counter-1');
+                        if (counter1) {
+                            counter1.textContent = parseInt(counter1.textContent) + 1;
+                        }
+                        const counter2 = document.getElementById('live-counter-2');
+                        if (counter2) {
+                            counter2.textContent = parseInt(counter2.textContent) + 5;
+                        }
+                    }, 1500);
+                });
+            }
+
+            // Text Analysis Demo
+            const analyzeTextBtn = document.getElementById('analyze-text');
+            const textInput = document.getElementById('text-input');
+            const analysisResults = document.getElementById('analysis-results');
+
+            if (analyzeTextBtn) {
+                analyzeTextBtn.addEventListener('click', () => {
+                    const text = textInput.value;
+
+                    if (!text.trim()) {
+                        alert('Please enter text to analyze!');
+                        return;
+                    }
+
+                    analyzeTextBtn.disabled = true;
+                    analyzeTextBtn.innerHTML = '<svg class="animate-spin w-5 h-5 mr-2" fill="none" viewBox="0 0 24 24"><circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle><path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path></svg> Analyzing...';
+
+                    setTimeout(() => {
+                        // Calculate statistics
+                        const words = text.trim().split(/\s+/).length;
+                        const chars = text.length;
+                        const sentences = text.split(/[.!?]+/).filter(s => s.trim().length > 0).length;
+
+                        document.getElementById('word-count').textContent = words;
+                        document.getElementById('char-count').textContent = chars;
+                        document.getElementById('sentence-count').textContent = sentences;
+
+                        // Simple sentiment analysis
+                        const positiveWords = ['love', 'great', 'excellent', 'amazing', 'wonderful', 'best', 'fantastic', 'awesome', 'perfect', 'happy'];
+                        const negativeWords = ['hate', 'terrible', 'awful', 'worst', 'bad', 'horrible', 'poor', 'disappointing', 'useless'];
+
+                        const lowerText = text.toLowerCase();
+                        let positiveCount = 0;
+                        let negativeCount = 0;
+
+                        positiveWords.forEach(word => {
+                            if (lowerText.includes(word)) positiveCount++;
+                        });
+                        negativeWords.forEach(word => {
+                            if (lowerText.includes(word)) negativeCount++;
+                        });
+
+                        let sentiment, color, percentage;
+                        if (positiveCount > negativeCount) {
+                            sentiment = '😊 Positive';
+                            color = 'bg-green-500 text-green-100';
+                            percentage = Math.min(100, 50 + (positiveCount * 10));
+                        } else if (negativeCount > positiveCount) {
+                            sentiment = '😞 Negative';
+                            color = 'bg-red-500 text-red-100';
+                            percentage = Math.min(100, 50 + (negativeCount * 10));
+                        } else {
+                            sentiment = '😐 Neutral';
+                            color = 'bg-yellow-500 text-yellow-100';
+                            percentage = 50;
+                        }
+
+                        document.getElementById('sentiment-badge').textContent = sentiment;
+                        document.getElementById('sentiment-badge').className = `px-3 py-1 rounded-full text-sm font-bold ${color}`;
+                        document.getElementById('sentiment-bar').style.width = percentage + '%';
+                        document.getElementById('sentiment-bar').className = `h-2 rounded-full transition-all duration-500 ${color.split(' ')[0]}`;
+
+                        // Extract keywords (simple word frequency)
+                        const stopWords = ['the', 'a', 'an', 'and', 'or', 'but', 'in', 'on', 'at', 'to', 'for', 'of', 'with', 'by', 'from', 'is', 'are', 'was', 'were', 'be', 'been', 'being', 'have', 'has', 'had', 'do', 'does', 'did', 'will', 'would', 'could', 'should', 'may', 'might', 'must', 'can', 'this', 'that', 'these', 'those', 'i', 'you', 'he', 'she', 'it', 'we', 'they'];
+                        const wordArray = text.toLowerCase().match(/\b[a-z]+\b/g) || [];
+                        const wordFreq = {};
+
+                        wordArray.forEach(word => {
+                            if (!stopWords.includes(word) && word.length > 3) {
+                                wordFreq[word] = (wordFreq[word] || 0) + 1;
+                            }
+                        });
+
+                        const sortedWords = Object.entries(wordFreq).sort((a, b) => b[1] - a[1]).slice(0, 8);
+                        const keywordsContainer = document.getElementById('keywords');
+                        keywordsContainer.innerHTML = sortedWords.map(([word, count]) =>
+                            `<span class="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-xs font-medium">${word} (${count})</span>`
+                        ).join('');
+
+                        // Show results
+                        analysisResults.classList.remove('hidden');
+                        analyzeTextBtn.disabled = false;
+                        analyzeTextBtn.innerHTML = '<svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/></svg> Analyze with AI';
+
+                        // Update live counter
+                        const counter1 = document.getElementById('live-counter-1');
+                        if (counter1) {
+                            counter1.textContent = parseInt(counter1.textContent) + 1;
+                        }
+                        const counter2 = document.getElementById('live-counter-2');
+                        if (counter2) {
+                            counter2.textContent = parseInt(counter2.textContent) + words;
+                        }
+                    }, 1200);
+                });
+            }
+
+            // Initialize live counters with random starting values
+            const counter1 = document.getElementById('live-counter-1');
+            const counter2 = document.getElementById('live-counter-2');
+            if (counter1) counter1.textContent = Math.floor(Math.random() * 50) + 20;
+            if (counter2) counter2.textContent = Math.floor(Math.random() * 200) + 100;
+
+            // ===== N8N CHATBOT INTEGRATION =====
+            // Replace this URL with your actual n8n webhook URL
+            const N8N_WEBHOOK_URL = 'https://your-n8n-instance.com/webhook/chatbot';
+
+            const chatbotToggle = document.getElementById('chatbot-toggle');
+            const chatbotWindow = document.getElementById('chatbot-window');
+            const chatIcon = document.getElementById('chat-icon');
+            const closeIcon = document.getElementById('close-icon');
+            const chatInput = document.getElementById('chat-input');
+            const sendButton = document.getElementById('send-message');
+            const chatMessages = document.getElementById('chat-messages');
+            const quickActions = document.querySelectorAll('.quick-action');
+
+            let sessionId = 'session_' + Date.now() + '_' + Math.random().toString(36).substr(2, 9);
+
+            // Backup event listener for chatbot toggle (onclick is primary)
+            if (chatbotToggle) {
+                chatbotToggle.addEventListener('click', toggleChatbot);
+            }
+
+            // Send message to n8n webhook
+            async function sendMessageToN8n(message) {
+                try {
+                    const response = await fetch(N8N_WEBHOOK_URL, {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                        },
+                        body: JSON.stringify({
+                            message: message,
+                            sessionId: sessionId,
+                            timestamp: new Date().toISOString(),
+                            source: 'portfolio-website',
+                            userAgent: navigator.userAgent
+                        })
+                    });
+
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok');
+                    }
+
+                    const data = await response.json();
+                    return data.response || data.message || 'Thank you for your message! I will get back to you soon.';
+                } catch (error) {
+                    console.error('Error connecting to n8n:', error);
+                    // Fallback response if n8n is unavailable
+                    return getFallbackResponse(message);
+                }
+            }
+
+            // Fallback responses if n8n is unavailable
+            function getFallbackResponse(message) {
+                const lowerMessage = message.toLowerCase();
+
+                if (lowerMessage.includes('n8n') || lowerMessage.includes('automation')) {
+                    return 'Great question about automation! I work extensively with n8n and workflow automation. Drop me an email at alex.chen@engineering.com and we can discuss your specific needs.';
+                } else if (lowerMessage.includes('electronics') || lowerMessage.includes('circuit')) {
+                    return 'I handle electronics design projects regularly. Let me know what you\'re working on - alex.chen@engineering.com';
+                } else if (lowerMessage.includes('price') || lowerMessage.includes('cost') || lowerMessage.includes('quote')) {
+                    return 'For pricing, it depends on the project scope. Send me details at alex.chen@engineering.com and I\'ll get you a quote within 24 hours.';
+                } else if (lowerMessage.includes('available') || lowerMessage.includes('schedule')) {
+                    return 'I\'m usually available for calls most weekdays. Email me at alex.chen@engineering.com with your preferred times.';
+                } else if (lowerMessage.includes('portfolio') || lowerMessage.includes('work') || lowerMessage.includes('project')) {
+                    return 'Check out the projects section above to see some of my recent work. Feel free to ask about any specific project!';
+                } else {
+                    return 'Thanks for the message! Best way to reach me is alex.chen@engineering.com - I typically respond within a few hours.';
+                }
+            }
+
+            // Display message in chat
+            function displayMessage(message, isUser = true) {
+                const messageDiv = document.createElement('div');
+                messageDiv.className = `flex items-start space-x-3 ${isUser ? 'flex-row-reverse space-x-reverse' : ''}`;
+
+                const avatar = document.createElement('div');
+                avatar.className = `w-8 h-8 ${isUser ? 'bg-primary-600' : 'bg-primary-100'} rounded-full flex items-center justify-center flex-shrink-0`;
+                avatar.innerHTML = isUser ?
+                    '<span class="text-white text-xs font-bold">You</span>' :
+                    '<svg class="w-4 h-4 text-primary-600" fill="currentColor" viewBox="0 0 20 20"><path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3z"/></svg>';
+
+                const messageContent = document.createElement('div');
+                messageContent.className = `${isUser ? 'bg-primary-600 text-white' : 'bg-white'} rounded-lg p-3 shadow-sm max-w-xs`;
+                messageContent.innerHTML = `<p class="text-sm ${isUser ? 'text-white' : 'text-gray-800'}">${message}</p>`;
+
+                messageDiv.appendChild(avatar);
+                messageDiv.appendChild(messageContent);
+                chatMessages.appendChild(messageDiv);
+
+                // Scroll to bottom
+                chatMessages.scrollTop = chatMessages.scrollHeight;
+            }
+
+            // Show typing indicator
+            function showTypingIndicator() {
+                const typingDiv = document.createElement('div');
+                typingDiv.id = 'typing-indicator';
+                typingDiv.className = 'flex items-start space-x-3';
+                typingDiv.innerHTML = `
+                <div class="w-8 h-8 bg-primary-100 rounded-full flex items-center justify-center flex-shrink-0">
+                    <svg class="w-4 h-4 text-primary-600" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3z"/>
+                    </svg>
+                </div>
+                <div class="bg-white rounded-lg p-3 shadow-sm">
+                    <div class="flex space-x-1">
+                        <div class="w-2 h-2 bg-gray-400 rounded-full animate-bounce"></div>
+                        <div class="w-2 h-2 bg-gray-400 rounded-full animate-bounce" style="animation-delay: 0.1s"></div>
+                        <div class="w-2 h-2 bg-gray-400 rounded-full animate-bounce" style="animation-delay: 0.2s"></div>
+                    </div>
+                </div>
+            `;
+                chatMessages.appendChild(typingDiv);
+                chatMessages.scrollTop = chatMessages.scrollHeight;
+            }
+
+            // Remove typing indicator
+            function removeTypingIndicator() {
+                const typingIndicator = document.getElementById('typing-indicator');
+                if (typingIndicator) {
+                    typingIndicator.remove();
+                }
+            }
+
+            // Handle message sending
+            async function handleSendMessage() {
+                const message = chatInput.value.trim();
+                if (message) {
+                    // Display user message
+                    displayMessage(message, true);
+                    chatInput.value = '';
+
+                    // Disable input while processing
+                    chatInput.disabled = true;
+                    sendButton.disabled = true;
+
+                    // Show typing indicator
+                    showTypingIndicator();
+
+                    try {
+                        // Send to n8n and get response
+                        const response = await sendMessageToN8n(message);
+
+                        // Remove typing indicator
+                        removeTypingIndicator();
+
+                        // Display bot response
+                        displayMessage(response, false);
+                    } catch (error) {
+                        removeTypingIndicator();
+                        displayMessage('Sorry, I\'m having trouble connecting right now. Please try again or email alex.chen@engineering.com', false);
+                    } finally {
+                        // Re-enable input
+                        chatInput.disabled = false;
+                        sendButton.disabled = false;
+                        chatInput.focus();
+                    }
+                }
+            }
+
+            // Event listeners for chat
+            sendButton.addEventListener('click', handleSendMessage);
+            chatInput.addEventListener('keypress', (e) => {
+                if (e.key === 'Enter') {
+                    handleSendMessage();
+                }
+            });
+
+            // Quick action buttons
+            quickActions.forEach(button => {
+                button.addEventListener('click', async () => {
+                    const message = button.getAttribute('data-message');
+                    displayMessage(message, true);
+
+                    showTypingIndicator();
+
+                    try {
+                        const response = await sendMessageToN8n(message);
+                        removeTypingIndicator();
+                        displayMessage(response, false);
+                    } catch (error) {
+                        removeTypingIndicator();
+                        displayMessage('Sorry, I\'m having trouble connecting. Please email alex.chen@engineering.com', false);
+                    }
+                });
+            });
+
+        }); // End of window.addEventListener('load')
+    </script>
+    <script>(function () { function c() { var b = a.contentDocument || a.contentWindow.document; if (b) { var d = b.createElement('script'); d.innerHTML = "window.__CF$cv$params={r:'98ca945080a484af',t:'MTc2MDE0NjA5Mi4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);"; b.getElementsByTagName('head')[0].appendChild(d) } } if (document.body) { var a = document.createElement('iframe'); a.height = 1; a.width = 1; a.style.position = 'absolute'; a.style.top = 0; a.style.left = 0; a.style.border = 'none'; a.style.visibility = 'hidden'; document.body.appendChild(a); if ('loading' !== document.readyState) c(); else if (window.addEventListener) document.addEventListener('DOMContentLoaded', c); else { var e = document.onreadystatechange || function () { }; document.onreadystatechange = function (b) { e(b); 'loading' !== document.readyState && (document.onreadystatechange = e, c()) } } } })();</script>
+</body>
+
+</html>
