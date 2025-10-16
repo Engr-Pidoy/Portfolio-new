@@ -218,8 +218,8 @@
                     <a href="#contact"
                         class="bg-primary-700 text-white px-6 py-2 rounded-lg hover:bg-primary-800 transition duration-300 font-medium">Contact</a>
 
-                    <!-- Theme Selector -->
-                    <div class="relative">
+                    <!-- Theme Selector (Hidden on Mobile) -->
+                    <div class="relative hidden md:block">
                         <button id="theme-selector"
                             class="p-2 text-gray-500 hover:text-primary-700 transition duration-300">
                             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -257,11 +257,33 @@
                     </div>
                 </div>
                 <button id="mobile-menu-btn" class="md:hidden text-gray-700">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg id="hamburger-icon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                             d="M4 6h16M4 12h16M4 18h16"></path>
                     </svg>
+                    <svg id="close-icon" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12">
+                        </path>
+                    </svg>
                 </button>
+            </div>
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden border-t border-gray-100 py-4">
+                <a href="#home"
+                    class="block text-gray-700 hover:text-primary-700 hover:bg-gray-50 transition duration-300 font-medium px-4 py-3 rounded-lg">Home</a>
+                <a href="#about"
+                    class="block text-gray-700 hover:text-primary-700 hover:bg-gray-50 transition duration-300 font-medium px-4 py-3 rounded-lg">About</a>
+                <a href="#services"
+                    class="block text-gray-700 hover:text-primary-700 hover:bg-gray-50 transition duration-300 font-medium px-4 py-3 rounded-lg">Services</a>
+                <a href="#expertise"
+                    class="block text-gray-700 hover:text-primary-700 hover:bg-gray-50 transition duration-300 font-medium px-4 py-3 rounded-lg">Expertise</a>
+                <a href="#automation-demo"
+                    class="block text-gray-700 hover:text-primary-700 hover:bg-gray-50 transition duration-300 font-medium px-4 py-3 rounded-lg">Live
+                    Demo</a>
+                <a href="#projects"
+                    class="block text-gray-700 hover:text-primary-700 hover:bg-gray-50 transition duration-300 font-medium px-4 py-3 rounded-lg">Portfolio</a>
+                <a href="#contact"
+                    class="block bg-primary-700 text-white text-center px-6 py-3 rounded-lg hover:bg-primary-800 transition duration-300 font-medium mt-2">Contact</a>
             </div>
         </div>
     </nav>
@@ -1446,31 +1468,50 @@
                     console.log('CLOSED');
                 }
             "
-            class="w-16 h-16 bg-primary-600 hover:bg-primary-700 text-white rounded-full shadow-lg flex items-center justify-center transition-all duration-300 transform hover:scale-105">
-            <svg id="chat-icon" class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            class="w-14 h-14 sm:w-16 sm:h-16 bg-primary-600 hover:bg-primary-700 text-white rounded-full shadow-lg flex items-center justify-center transition-all duration-300 transform hover:scale-105">
+            <svg id="chat-icon" class="w-6 h-6 sm:w-8 sm:h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                     d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
             </svg>
-            <svg id="close-icon" class="w-8 h-8 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg id="close-icon" class="w-6 h-6 sm:w-8 sm:h-8 hidden" fill="none" stroke="currentColor"
+                viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
             </svg>
         </button>
 
         <!-- Chatbot Window -->
         <div id="chatbot-window"
-            class="hidden absolute bottom-20 right-0 w-96 h-96 bg-white rounded-2xl shadow-2xl border border-gray-200 flex flex-col overflow-hidden">
+            class="hidden fixed sm:absolute bottom-0 sm:bottom-20 right-0 left-0 sm:left-auto w-full sm:w-96 h-[500px] sm:h-96 bg-white rounded-t-2xl sm:rounded-2xl shadow-2xl border border-gray-200 flex flex-col overflow-hidden mx-4 sm:mx-0 mb-4 sm:mb-0">
             <!-- Header -->
-            <div class="bg-primary-600 text-white p-4 flex items-center space-x-3">
-                <div class="w-10 h-10 bg-white bg-opacity-20 rounded-full flex items-center justify-center">
-                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
-                        <path
-                            d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3z" />
+            <div class="bg-primary-600 text-white p-4 flex items-center justify-between">
+                <div class="flex items-center space-x-3">
+                    <div class="w-10 h-10 bg-white bg-opacity-20 rounded-full flex items-center justify-center">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
+                            <path
+                                d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3z" />
+                        </svg>
+                    </div>
+                    <div>
+                        <div class="font-semibold">Chat Support</div>
+                        <div class="text-xs text-primary-200">Available • Quick Response</div>
+                    </div>
+                </div>
+                <!-- Close Button -->
+                <button onclick="
+                    var win = document.getElementById('chatbot-window');
+                    var chatIcon = document.getElementById('chat-icon');
+                    var closeIcon = document.getElementById('close-icon');
+                    win.classList.add('hidden');
+                    win.style.display = 'none';
+                    chatIcon.classList.remove('hidden');
+                    closeIcon.classList.add('hidden');
+                    console.log('CLOSED via X button');
+                " class="hover:bg-white hover:bg-opacity-20 rounded-full p-1 transition duration-200 flex-shrink-0">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M6 18L18 6M6 6l12 12" />
                     </svg>
-                </div>
-                <div>
-                    <div class="font-semibold">Chat Support</div>
-                    <div class="text-xs text-primary-200">Available • Quick Response</div>
-                </div>
+                </button>
             </div>
 
             <!-- Chat Messages -->
@@ -1538,15 +1579,15 @@
     <!-- Footer -->
     <footer class="bg-gray-900 text-white py-12">
         <div class="max-w-7xl mx-auto px-6">
-            <div class="grid md:grid-cols-4 gap-8 mb-8">
+            <div class="grid md:grid-cols-4 gap-8 mb-8 text-center">
                 <div>
-                    <div class="flex items-center mb-4">
+                    <div class="flex items-center justify-center mb-4">
                         <div class="w-8 h-8 bg-primary-600 rounded-lg flex items-center justify-center mr-2">
                             <span class="text-white font-bold">PJG</span>
                         </div>
                         <span class="font-bold text-lg">Preal Jesse Gepulgane</span>
                     </div>
-                    <p class="text-gray-400 text-sm">Electronics Engineer & AI Automation Specialist delivering
+                    <p class="text-gray-400 text-sm">Electronics & AI Automation Specialist delivering
                         enterprise-grade solutions.</p>
                 </div>
                 <div>
@@ -1714,10 +1755,39 @@
 
             // Mobile menu toggle
             const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const hamburgerIcon = document.getElementById('hamburger-icon');
+            const mobileCloseIcon = document.getElementById('close-icon');
 
-            mobileMenuBtn.addEventListener('click', () => {
-                alert('Mobile menu functionality would be implemented here');
-            });
+            if (mobileMenuBtn && mobileMenu) {
+                mobileMenuBtn.addEventListener('click', () => {
+                    console.log('Mobile menu button clicked');
+
+                    // Toggle menu visibility
+                    mobileMenu.classList.toggle('hidden');
+
+                    // Toggle icons
+                    if (hamburgerIcon && mobileCloseIcon) {
+                        hamburgerIcon.classList.toggle('hidden');
+                        mobileCloseIcon.classList.toggle('hidden');
+                    }
+
+                    console.log('Mobile menu toggled, hidden class:', mobileMenu.classList.contains('hidden'));
+                });
+
+                // Close mobile menu when a link is clicked
+                const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+                mobileMenuLinks.forEach(link => {
+                    link.addEventListener('click', () => {
+                        mobileMenu.classList.add('hidden');
+                        if (hamburgerIcon && mobileCloseIcon) {
+                            hamburgerIcon.classList.remove('hidden');
+                            mobileCloseIcon.classList.add('hidden');
+                        }
+                        console.log('Mobile menu closed after link click');
+                    });
+                });
+            }
 
             // Smooth scrolling for navigation links
             document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -2192,7 +2262,16 @@
 
             // ===== N8N CHATBOT INTEGRATION =====
             // Replace this URL with your actual n8n webhook URL
-            const N8N_WEBHOOK_URL = 'https://your-n8n-instance.com/webhook/chatbot';
+            // ===== CHATBOT WEBHOOK CONFIGURATION =====
+            // Replace this with your actual webhook URL
+            // Examples:
+            // n8n: 'https://your-n8n-instance.app.n8n.cloud/webhook/chatbot'
+            // Make.com: 'https://hook.eu1.make.com/your-webhook-id'
+            // Custom API: 'https://your-api.com/chat'
+            const CHATBOT_WEBHOOK_URL = 'https://your-webhook-url-here.com/webhook/chat';
+
+            // Enable/disable webhook (set to false to use only fallback responses for testing)
+            const ENABLE_WEBHOOK = true;
 
             const chatbotToggle = document.getElementById('chatbot-toggle');
             const chatbotWindow = document.getElementById('chatbot-window');
@@ -2210,10 +2289,17 @@
                 chatbotToggle.addEventListener('click', toggleChatbot);
             }
 
-            // Send message to n8n webhook
-            async function sendMessageToN8n(message) {
+            // Send message to webhook
+            async function sendMessageToWebhook(message) {
+                // If webhook is disabled, use fallback immediately
+                if (!ENABLE_WEBHOOK) {
+                    console.log('Webhook disabled, using fallback response');
+                    return getFallbackResponse(message);
+                }
+
                 try {
-                    const response = await fetch(N8N_WEBHOOK_URL, {
+                    console.log('Sending message to webhook:', CHATBOT_WEBHOOK_URL);
+                    const response = await fetch(CHATBOT_WEBHOOK_URL, {
                         method: 'POST',
                         headers: {
                             'Content-Type': 'application/json',
@@ -2223,19 +2309,23 @@
                             sessionId: sessionId,
                             timestamp: new Date().toISOString(),
                             source: 'portfolio-website',
-                            userAgent: navigator.userAgent
+                            userAgent: navigator.userAgent,
+                            page: window.location.href
                         })
                     });
 
                     if (!response.ok) {
-                        throw new Error('Network response was not ok');
+                        throw new Error(`HTTP error! status: ${response.status}`);
                     }
 
                     const data = await response.json();
-                    return data.response || data.message || 'Thank you for your message! I will get back to you soon.';
+                    console.log('Webhook response:', data);
+
+                    // Try different response field names
+                    return data.response || data.message || data.reply || data.text || 'Thank you for your message!';
                 } catch (error) {
-                    console.error('Error connecting to n8n:', error);
-                    // Fallback response if n8n is unavailable
+                    console.error('Error connecting to webhook:', error);
+                    // Fallback response if webhook is unavailable
                     return getFallbackResponse(message);
                 }
             }
@@ -2245,17 +2335,17 @@
                 const lowerMessage = message.toLowerCase();
 
                 if (lowerMessage.includes('n8n') || lowerMessage.includes('automation')) {
-                    return 'Great question about automation! I work extensively with n8n and workflow automation. Drop me an email at alex.chen@engineering.com and we can discuss your specific needs.';
+                    return 'Great question about automation! I work extensively with n8n and workflow automation. Drop me an email at gepulganepj06@gmail.com and we can discuss your specific needs.';
                 } else if (lowerMessage.includes('electronics') || lowerMessage.includes('circuit')) {
-                    return 'I handle electronics design projects regularly. Let me know what you\'re working on - alex.chen@engineering.com';
+                    return 'I handle electronics design projects regularly. Let me know what you\'re working on - gepulganepj06@gmail.com';
                 } else if (lowerMessage.includes('price') || lowerMessage.includes('cost') || lowerMessage.includes('quote')) {
-                    return 'For pricing, it depends on the project scope. Send me details at alex.chen@engineering.com and I\'ll get you a quote within 24 hours.';
+                    return 'For pricing, it depends on the project scope. Send me details at gepulganepj06@gmail.com and I\'ll get you a quote within 24 hours.';
                 } else if (lowerMessage.includes('available') || lowerMessage.includes('schedule')) {
-                    return 'I\'m usually available for calls most weekdays. Email me at alex.chen@engineering.com with your preferred times.';
+                    return 'I\'m usually available for calls most weekdays. Email me at gepulganepj06@gmail.com with your preferred times.';
                 } else if (lowerMessage.includes('portfolio') || lowerMessage.includes('work') || lowerMessage.includes('project')) {
                     return 'Check out the projects section above to see some of my recent work. Feel free to ask about any specific project!';
                 } else {
-                    return 'Thanks for the message! Best way to reach me is alex.chen@engineering.com - I typically respond within a few hours.';
+                    return 'Thanks for the message! Best way to reach me is gepulganepj06@gmail.com - I typically respond within a few hours.';
                 }
             }
 
@@ -2329,8 +2419,8 @@
                     showTypingIndicator();
 
                     try {
-                        // Send to n8n and get response
-                        const response = await sendMessageToN8n(message);
+                        // Send to webhook and get response
+                        const response = await sendMessageToWebhook(message);
 
                         // Remove typing indicator
                         removeTypingIndicator();
@@ -2339,7 +2429,7 @@
                         displayMessage(response, false);
                     } catch (error) {
                         removeTypingIndicator();
-                        displayMessage('Sorry, I\'m having trouble connecting right now. Please try again or email alex.chen@engineering.com', false);
+                        displayMessage('Sorry, I\'m having trouble connecting right now. Please try again or contact me directly.', false);
                     } finally {
                         // Re-enable input
                         chatInput.disabled = false;
@@ -2366,12 +2456,12 @@
                     showTypingIndicator();
 
                     try {
-                        const response = await sendMessageToN8n(message);
+                        const response = await sendMessageToWebhook(message);
                         removeTypingIndicator();
                         displayMessage(response, false);
                     } catch (error) {
                         removeTypingIndicator();
-                        displayMessage('Sorry, I\'m having trouble connecting. Please email alex.chen@engineering.com', false);
+                        displayMessage('Sorry, I\'m having trouble connecting. Please try again later.', false);
                     }
                 });
             });
